@@ -1,0 +1,16 @@
+.Intro_section{
+    min-height: 680px;
+    padding-bottom: 0;
+    height: 100%;
+    padding-top: 70px;
+    text-align: center;
+    background: url('../../assets/images/ei-main.jpg') center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Row_centered{
+    text-align:center;
+}
