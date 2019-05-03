@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     z-index: 90;
-    width: 100%;
+    width: 90%;
     /*height: 6.8rem;*/
     transition: transform 0.4s ease-in-out 0s, height;
     box-shadow: 0 0.125rem 0.625rem rgba(90,97,105,.12);
@@ -16,7 +16,7 @@
 
 .Tabs {
     /*margin-top: 7px;*/
-    font-size: 12px;
+    font-size: 14px;
     padding: 0px;
     list-style: none;
     background: transparent;

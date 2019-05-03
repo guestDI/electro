@@ -12,5 +12,96 @@
 }
 
 .Row_centered{
-    text-align:center;
+    text-align:center !important;
+    justify-content: center;
+}
+
+.Col_centered{
+    display:inline-block;
+    float:none;
+}
+
+.Text_upper_case{
+    text-transform: uppercase;
+}
+
+hr{
+    max-width: 70px;
+    border-width: 0.1rem;
+    border-color: #f0be3d;
+}
+
+/*Welcome*/
+.Welcome_header{
+    padding: 100px 0 0px;
+}
+.Welcome_header h2{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+.Welcome_header hr {
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.Subtext{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.Get_started_wrapper{
+    padding: 70px 0 0;
+}
+
+/*Services section*/
+.Advantages_section {
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: #fff;
+}
+
+.Advantages_section .Advantages_section__row{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.Advantages_section .Advantages_section__row .Tile img{
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    cursor: pointer;
+}
+.Advantages_section .Advantages_section__row .Tile h3{
+    font-size: 1.51em;
+    line-height: 1.05em;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.Advantages_section .Advantages_section__row .Tile .Tile_desc{
+    font-size: 14px;
+    color: #777777;
+    font-weight: 500;
+    width: 70%;
+    margin: auto;
+}
+.Advantages_section .Advantages_section__row .Tile i{
+    font-size: 4rem;
+}
+
+.Equipment_section {
+    height: 100%;
+    padding-top: 60px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.Equipment_section .Equipment_row{
+    margin-left: 0 !important;
+    margin-right: 0!important;
 }

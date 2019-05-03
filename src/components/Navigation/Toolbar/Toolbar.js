@@ -3,7 +3,7 @@ import classes from './Toolbar.module.css';
 import { Link } from 'react-scroll'
 
 const toolbar = (props) => (
-    <header className={`${classes.Toolbar} sticky-top w-100`}>
+    <header className={`${classes.Toolbar} sticky-top`}>
         <nav className={`${classes.Tabs} navbar`} style={{height: "3.75rem"}}>
             <li><Link to="services" spy={true} smooth={true} duration={500} title="Equipment">Наше оборудование</Link></li>
             <li><Link to="prices" spy={true} smooth={true} duration={500} title="Prices">Цены</Link></li>
