@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     z-index: 90;
-    width: 90%;
+    width: 100%;
     /*height: 6.8rem;*/
     transition: transform 0.4s ease-in-out 0s, height;
     box-shadow: 0 0.125rem 0.625rem rgba(90,97,105,.12);
@@ -27,12 +27,12 @@
     position: relative;
     text-decoration: none;
     font-family: 'Dosis', sans-serif;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 .Tabs li {
     list-style: none;
     color: #000000;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     padding: 10px 15px;
     display: inline-block;
     position: relative;

@@ -13,11 +13,11 @@ const shelf = () => {
                             <h5>{img.title}</h5>
                             <p>Landscape Photography</p>
                         </a>
-                        <div className={`row ${classes.Row_centered}`}>
-                            <div className={`col-md-8 ${classes.Col_centered} ${classes.Category_desc}`}>
-                                {/*<p>Description</p>*/}
-                            </div>
-                        </div>
+                        {/*<div className={`row ${classes.Row_centered}`}>*/}
+                            {/*<div className={`col-md-8 ${classes.Col_centered} ${classes.Category_desc}`}>*/}
+                                {/*/!*<p>Description</p>*!/*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
                     </div>
                 )
             })}

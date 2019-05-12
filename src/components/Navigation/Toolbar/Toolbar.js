@@ -1,12 +1,13 @@
 import React from 'react';
 import classes from './Toolbar.module.css';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom'
 
 const toolbar = (props) => (
     <header className={`${classes.Toolbar} sticky-top`}>
         <nav className={`${classes.Tabs} navbar`} style={{height: "3.75rem"}}>
             <li><Link to="services" spy={true} smooth={true} duration={500} title="Equipment">Наше оборудование</Link></li>
-            <li><Link to="prices" spy={true} smooth={true} duration={500} title="Prices">Цены</Link></li>
+            <li><NavLink to="conditions" title="Prices">Условия и Цены</NavLink></li>
             <li><Link to="projects" spy={true} smooth={true} duration={500} title="About Us ">О нас</Link></li>
             <li><Link to="contact" spy={true} smooth={true} duration={600} title="Request">Оставить заявку</Link></li>
             {/*<li><NavLink to="/signUp" title="Sign Up">Sign Up</NavLink></li>*/}

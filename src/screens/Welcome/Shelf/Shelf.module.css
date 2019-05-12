@@ -67,8 +67,8 @@
 
 .Shelf_img__info .Info_bg {
     position: absolute;
-    width: 110%;
-    height: 110%;
+    width: 105%;
+    height: 105%;
     left: -5%;
     top: -5%;
     -webkit-transform: scale(1.1);

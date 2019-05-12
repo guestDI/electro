@@ -1,0 +1,45 @@
+.Intro_section{
+    min-height: 680px;
+    padding-bottom: 0;
+    height: 100%;
+    padding-top: 70px;
+    text-align: center;
+    background: url('../../assets/images/ei-main.jpg') center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Row_centered{
+    text-align:center !important;
+    justify-content: center;
+}
+
+.Col_centered{
+    display:inline-block;
+    float:none;
+}
+
+.Welcome_header{
+    padding: 100px 0 0px;
+}
+.Welcome_header h2{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+.Welcome_header hr {
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.Subtext{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.Get_started_wrapper{
+    padding: 70px 0 0;
+}

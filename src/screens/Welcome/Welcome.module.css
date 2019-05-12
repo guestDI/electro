@@ -105,3 +105,28 @@ hr{
     margin-left: 0 !important;
     margin-right: 0!important;
 }
+
+/*Feedback section*/
+.Reviews_section {
+    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: #fff;
+}
+
+.Reviews_section .Person_row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.Reviews_section .Person_desc{
+    text-align: center;
+    height: 120px;
+    padding-top: 20px;
+    font-size: 16px;
+    color: #777777;
+}
