@@ -105,3 +105,9 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 499px) {
+    .DesktopOnly {
+        display: none;
+    }
+}
