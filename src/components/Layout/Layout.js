@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import classes from './Layout.module.css';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
-import SideDrawer from '../Navigation/SideDrawer/SideDrawer'
+import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
+import Footer from '../../components/Footer/Footer';
 
 class Layout extends Component{
     state = {
@@ -21,12 +22,13 @@ class Layout extends Component{
   render(){
       return (
           <div className={classes.Wrapper}>
-              <div className="main-content">
+              <div>
                   <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler}/>
                   <SideDrawer open={this.state.showSideDrawer} closed={this.sideDrawerClosedHandler}/>
                   <main className={`${classes.Content} p-0`}>
                       {this.props.children}
                   </main>
+                  <Footer/>
               </div>
           </div>
       );

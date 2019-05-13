@@ -1,6 +1,7 @@
 .Wrapper{
     /*display: flex;*/
     /*background-color: #c7cfd7;*/
+    /*width: fit-content;*/
 }
 
 .Content{
@@ -17,4 +18,22 @@
 /*html {*/
     /*width: 100%;*/
     /*height: 100%;*/
+/*}*/
+
+/*@media (min-width: 360px) and (max-width: 768px) {*/
+    /*.Wrapper{*/
+        /*width: fit-content;*/
+    /*}*/
+/*}*/
+
+/*@media (min-width: 360px)  {*/
+    /*.Wrapper{*/
+        /*width: fit-content;*/
+    /*}*/
+/*}*/
+
+/*@media (min-width: 499px) {*/
+    /*.Wrapper{*/
+        /*width: fit-content;*/
+    /*}*/
 /*}*/

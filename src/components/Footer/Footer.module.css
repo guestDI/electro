@@ -1,0 +1,133 @@
+.Row_centered{
+    text-align:center !important;
+    justify-content: center;
+}
+
+.Footer_base{
+    padding-top: 30px;
+}
+
+.Footer_base .container > hr {
+    margin-top: 40px;
+    /*width: 100% !important;*/
+    max-width: 100% !important;
+    border-width: 1px !important;
+}
+
+.Footer_base__color{
+    background-color: #3c4c54;
+    background-image: url('../../assets/images/map-image.png');
+    color: #fefdff;
+}
+.Footer_base_text__color{
+    color: #fefdff;
+}
+
+.Footer_base .Title {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Footer_base .Info .Info_content {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.Copyright{
+    margin: 10px 0px 20px;
+    font-size: 11px;
+    color: #fff;
+    padding: 10px 15px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.Contact_section {
+    border-top: 1px solid #eee;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.Contact_section .Contact_section__contacts {
+    padding-bottom: 10px;
+}
+
+.Scroll_top .Scroll_top__button{
+    position: fixed;
+    right: 33px;
+    bottom: 30px;
+    display: none;
+    width: 35px;
+    line-height: 35px;
+    height: 35px;
+    /*visibility: hidden;*/
+    opacity: 1;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 90;
+    color: #fff;
+    background-image: url("../../assets/images/arrow_up.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #f0be3d;
+    border: 1px solid #f0be3d;
+    border-radius: 5px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .4s;
+    z-index: 12;
+}
+
+.Scroll_top .Scroll_top__button .Tooltip{
+    visibility: hidden;
+    width: 82px;
+    background-color: #fff;
+    color: #f0be3d;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -40px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.Scroll_top .Scroll_top__button .Tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.Scroll_top .Scroll_top__button.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+.Scroll_top .Scroll_top__button:hover .Tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+
+.Scroll_top .Scroll_top__button:hover {
+    background-color: #f0be3d;
+    transform: scale(1.15);
+}
