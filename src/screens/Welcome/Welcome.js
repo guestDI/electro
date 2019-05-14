@@ -30,7 +30,7 @@ class Welcome extends Component {
         };
     }
 
-    
+
     handleMemberClick = (index) => {
         this.setState({
             activeMember: index
@@ -68,9 +68,9 @@ class Welcome extends Component {
                                 </div>
                                 <div className={classes.Get_started_wrapper}>
                                     <Button title="Оставить заявку"/>
-                                    <div className="scroll_down" >
-                                        <div className="scroll_down__button" style={{display: "block"}}/>
-                                    </div>
+                                    {/*<div className="scroll_down" >*/}
+                                        {/*<div className="scroll_down__button" style={{display: "block"}}/>*/}
+                                    {/*</div>*/}
                                 </div>
                             </div>
                         </div>

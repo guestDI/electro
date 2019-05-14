@@ -33,7 +33,7 @@ hr{
 
 /*Welcome*/
 .Welcome_header{
-    padding: 100px 0 0px;
+    padding: 70px 0 0px;
     overflow: hidden;
 }
 .Welcome_header h2{
@@ -53,7 +53,7 @@ hr{
 }
 
 .Get_started_wrapper{
-    padding: 70px 0 0;
+    padding: 50px 0 0;
 }
 
 /*Services section*/
