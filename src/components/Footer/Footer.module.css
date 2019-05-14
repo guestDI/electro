@@ -7,7 +7,7 @@
     padding-top: 30px;
 }
 
-.Footer_base .container > hr {
+.Footer_base hr {
     margin-top: 40px;
     /*width: 100% !important;*/
     max-width: 100% !important;
@@ -49,7 +49,7 @@
 }
 
 .Contact_section .Contact_section__about {
-    padding: 0 0 10px 20px;
+    padding: 0 0 10px 15px;
 }
 
 .Scroll_top .Scroll_top__button{

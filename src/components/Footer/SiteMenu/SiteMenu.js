@@ -6,7 +6,7 @@ const siteMenu = () =>{
     return(
         <div>
             <h4 className={classes.Title}>Меню сайта</h4>
-            <ul className={classes.Contacts_section}>
+            <ul className={classes.SiteMenu_section}>
                 <NavigationItems/>
             </ul>
         </div>

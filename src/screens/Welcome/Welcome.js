@@ -30,6 +30,7 @@ class Welcome extends Component {
         };
     }
 
+    
     handleMemberClick = (index) => {
         this.setState({
             activeMember: index

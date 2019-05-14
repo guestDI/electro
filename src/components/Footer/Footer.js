@@ -3,6 +3,7 @@ import classes from './Footer.module.css';
 import Contacts from '../Footer/Contacts/Contacts';
 import OperationMode from '../Footer/OperationMode/OperationMode';
 import SiteMenu from '../Footer/SiteMenu/SiteMenu';
+import { Link } from 'react-scroll';
 
 // const scrollToTop = () => {
 //     this.refs.intro.scrollIntoView({block: 'start', behavior: 'smooth'});
@@ -48,11 +49,11 @@ const footer = () => (
             <div className={classes.Copyright}>
                 © 2019 D.Ihnatovich. Email: ignatovich.dm@gmail.com
             </div>
-            <div className={classes.Scroll_top}>
+            <Link to="intro" spy={true} smooth={true} duration={500} className={classes.Scroll_top}>
                 <div className={classes.Scroll_top__button} style={{display: "block"}}>
                     <span className={classes.Tooltip}>Scroll To Top</span>
                 </div>
-            </div>
+            </Link>
         </div>
     </footer>
 );
