@@ -34,6 +34,7 @@ hr{
 /*Welcome*/
 .Welcome_header{
     padding: 100px 0 0px;
+    overflow: hidden;
 }
 .Welcome_header h2{
     font-size: 2.8rem;

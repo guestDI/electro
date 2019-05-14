@@ -1,0 +1,90 @@
+.Contacts_section{
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+.Contacts_section span {
+    font-size: 12px;
+}
+
+.Contact_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.Contact_row i {
+    padding: 0 15px 0;
+    padding-left: 0;
+    font-size: 18px;
+}
+
+.Title {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Toolbar nav{
+    height: 100%;
+    margin-left: auto;
+}
+
+.Tabs {
+    /*margin-top: 7px;*/
+    font-size: 14px;
+    padding: 0px;
+    list-style: none;
+    background: transparent;
+    /*box-shadow:0px 5px 20px rgba(0,0,0,0.1);*/
+    display: flex;
+    justify-content: flex-end;
+    /*border-radius:50px;*/
+    position: relative;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    /*text-transform: uppercase;*/
+}
+.Tabs li {
+    list-style: none;
+    color: #000000;
+    /*text-transform: uppercase;*/
+    padding: 10px 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition-duration: 0.6s;
+    font-weight: 600;
+    outline: none;
+    text-decoration: none;
+}
+.Tabs li.active {
+    color: #000000;
+    font-weight: 600;
+    outline: none;
+    text-decoration: none;
+}
+.Tabs li i {
+    margin-right: 5px;
+    color: #000000;
+    font-weight: 600;
+}
+.Tabs li a {
+    color: #fff !important;
+    font-weight: 500;
+}
+.Tabs li a:hover {
+    /*color: #f05f40 !important;*/
+    /*font-weight: 700;*/
+    cursor: pointer !important;
+    outline: none;
+    text-decoration: none;
+    /*text-decoration: underline !important;*/
+}
+.Tabs a {
+    padding: 10px 10px;
+    color: #777;
+}
