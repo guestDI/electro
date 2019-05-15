@@ -1,4 +1,4 @@
-.Toolbar {
+.toolbar {
     height: 56px;
     width: 100%;
     position: fixed;
@@ -16,9 +16,15 @@
     box-sizing: border-box;
 }
 
-.Toolbar nav{
+.toolbar nav{
     height: 100%;
     margin-left: auto;
+}
+
+.scrolled {
+    /*border-bottom: 1px solid rgba(33,37,41,.1);*/
+    background-color: #3c4c54 !important;
+    transition: background-color 200ms linear;
 }
 
 .Tabs {
@@ -63,7 +69,15 @@
 .Tabs li a {
     color: #fff !important;
     font-weight: 500;
+    cursor: pointer;
 }
+
+.Tabs li div {
+    color: #fff !important;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 .Tabs li a:hover {
     /*color: #f05f40 !important;*/
     /*font-weight: 700;*/
@@ -72,10 +86,26 @@
     text-decoration: none;
     /*text-decoration: underline !important;*/
 }
+
+.Tabs li div:hover {
+    /*color: #f05f40 !important;*/
+    /*font-weight: 700;*/
+    cursor: pointer !important;
+    outline: none;
+    text-decoration: none;
+    /*text-decoration: underline !important;*/
+}
+
 .Tabs a {
     padding: 10px 10px;
     color: #777;
 }
+
+.Tabs div {
+    padding: 0 10px;
+    color: #777;
+}
+
 .Tabs a::before {
     content: '';
     display: block;
@@ -89,11 +119,35 @@
     transform: scale(0, 0.5);
     transition: color 0.1s, transform 0.2s ease-out;
 }
+
+.Tabs div::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 15%;
+    height: 3px;
+    width: 70%;
+    background-color: #fff;
+    transform-origin: right top;
+    transform: scale(0, 0.5);
+    transition: color 0.1s, transform 0.2s ease-out;
+}
+
 .Tabs a:active::before {
     background-color: #000000;
 }
 .Tabs a:hover::before,
 .Tabs a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 0.5);
+}
+
+.Tabs div:active::before {
+    background-color: #000000;
+}
+.Tabs div:hover::before,
+.Tabs div:focus::before {
     transform-origin: left top;
     transform: scale(1, 0.5);
 }

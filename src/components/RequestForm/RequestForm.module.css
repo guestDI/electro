@@ -1,0 +1,48 @@
+.sign_form_box_login .modal-content {
+    width: 310px;
+    height: 450px;
+}
+
+.sign_form_fields__submit.signin_form{
+    justify-content: space-between;
+}
+
+.sign_form_fields__submit.signin_form .submit_button{
+    border-radius: 50px;
+    width: 50%;
+}
+
+.sign_form_fields__submit .submit_button:hover:before {
+    transform: skewX(-45deg) translateX(13em) !important;
+}
+
+.signin_form .reset_link a{
+    font-size: 11px;
+    color: #5e534e;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.signin_form .reset_link a:hover{
+    color: #f05f40;
+}
+
+.signin_form__register{
+    padding-top: 65px;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    color: #5e534e;
+    font-weight: 600;
+}
+.signin_form__register a{
+    display: flex;
+    color: #5e534e;
+    padding-top: 5px;
+    justify-content: center;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.signin_form__register a:hover{
+    color: #f05f40;
+}

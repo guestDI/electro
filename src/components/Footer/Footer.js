@@ -31,11 +31,11 @@ const footer = () => (
                 <div className={`col-md-4 col-sm-12 ${classes.Contact_section__contacts}`}>
                     <Contacts/>
                 </div>
+                <div className={`col-md-4 col-sm-12 ${classes.siteMenu}`} >
+                    <SiteMenu/>
+                </div>
                 <div className={`col-md-4 col-sm-12 `}>
                     <OperationMode times={TIMES}/>
-                </div>
-                <div className={`col-md-4 col-sm-12 ${classes.Contact_section__about}`} style={{paddingLeft: '40px'}}>
-                    <SiteMenu/>
                 </div>
                 {/*<div className="col-md-5 col-xs-12 pull-right">*/}
                     {/*<div className={classes.Info}>*/}

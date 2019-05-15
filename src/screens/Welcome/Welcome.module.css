@@ -1,5 +1,5 @@
 .Intro_section{
-    min-height: 680px;
+    min-height: 650px;
     padding-bottom: 0;
     height: 100%;
     padding-top: 70px;
@@ -54,6 +54,10 @@ hr{
 
 .Get_started_wrapper{
     padding: 50px 0 0;
+}
+
+.Get_started_wrapper h4{
+    color: #ffffff;
 }
 
 /*Services section*/

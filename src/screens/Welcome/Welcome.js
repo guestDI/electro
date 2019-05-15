@@ -67,7 +67,9 @@ class Welcome extends Component {
                                     <p>Низкие цены. Быстрая доставка. Индивидуальный подход.</p>
                                 </div>
                                 <div className={classes.Get_started_wrapper}>
-                                    <Button title="Оставить заявку"/>
+                                    <h4>+375 29 666-66-66</h4>
+                                    <h4>+375 44 666-66-66</h4>
+                                    {/*<Button title="Оставить заявку"/>*/}
                                     {/*<div className="scroll_down" >*/}
                                         {/*<div className="scroll_down__button" style={{display: "block"}}/>*/}
                                     {/*</div>*/}
