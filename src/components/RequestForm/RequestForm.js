@@ -36,11 +36,11 @@ class RequestForm extends Component {
                                 <div className="row">
                                     <div className={`${classes.input} col-md-6`} style={{paddingRight: '10px'}}>
                                         <Input className={classes.input_field} required min="3" max="20" type="text" onTextChanged={this.onUsernameChanged}
-                                               name="username" placeholder="Ваше имя" />
+                                               name="name" placeholder="Ваше имя" />
                                     </div>
                                     <div className={`${classes.input} col-md-6`} style={{paddingLeft: '25px'}}>
                                         <Input className={classes.input_field} required min="9" max="17" type="text" onTextChanged={this.onSubjectChanged}
-                                               name="email" placeholder="Телефон" />
+                                               name="phone" placeholder="Телефон" />
                                     </div>
                                 </div>
                                 <div className="row">

@@ -14,7 +14,7 @@
     /*align-items: flex-start;*/
     /*width: 100%;*/
     align-items: center;
-    padding: 10px 0 20px 15px;
+    padding-bottom: 15px;
 }
 
 .message{
@@ -24,7 +24,7 @@
 
 .input_field {
     font-family: 'Dosis', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     color: #777777;
     line-height: 1.2;
     display: block;
