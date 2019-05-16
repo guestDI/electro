@@ -1,4 +1,4 @@
-.contact_form {
+.request_form {
     position: relative;
     width: auto;
     height: auto;
@@ -6,6 +6,13 @@
     /*border-radius: 20px;*/
     /*border: solid 1px #777777;*/
     /*box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);*/
+}
+
+.desc{
+    font-family: 'Dosis', sans-serif;
+    font-size: 12px;
+    color: #777777;
+    line-height: 1.2;
 }
 
 .input {
@@ -40,6 +47,11 @@
     /*border-bottom: 2px solid #c3c2c4;*/
 }
 
+.input_field__message{
+    height: 70px !important;
+    line-height:35px !important;
+}
+
 .input_field::-webkit-input-placeholder { -webkit-transition: opacity .5s;
     transition: opacity .5s; font-style: italic; color: #777777; font-size: 12px; opacity: 0.8}
 .input-box .input_field:focus::-webkit-input-placeholder { opacity: 0; }
@@ -50,15 +62,15 @@
     outline: none;
 }
 
-/*.contact-form .input-box .message-input-field::-webkit-input-placeholder { opacity: 0.8; -webkit-transition: opacity .5s;*/
-    /*transition: opacity .5s; font-style: italic; color: #fefdff; font-size: 12px}*/
-/*.contact-form .input-box .message-input-field:focus::-webkit-input-placeholder { opacity: 0; }*/
-/*.contact-form .input-box .message-input-field:focus {*/
-    /*border: 1px solid #f0be3d;*/
-    /*color: #fefdff;*/
-    /*transition: 0.2s ease;*/
-    /*outline: none;*/
-/*}*/
+.input_field__message::-moz-placeholder { /* Mozilla Firefox 19+ */
+    line-height:35px;
+}
+.input_field__message::-webkit-input-placeholder { /* Webkit */
+    line-height:35px;
+}
+.input_field__message:-ms-input-placeholder { /* IE */
+    line-height:35px;
+}
 
 @media only screen and (max-width: 767px) {
     .contact_form .input  {

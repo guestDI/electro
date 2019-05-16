@@ -5,9 +5,9 @@ import Backdrop from '../../Backdrop/Backdrop';
 import Hoc from '../../../hoc/Hoc';
 
 const sideDrawer = (props) => {
-    let attachedClasses = [classes.SideDrawer, classes.Close];
+    let attachedClasses = [classes.sideDrawer, classes.Close];
     if(props.open){
-        attachedClasses = [classes.SideDrawer, classes.Open]
+        attachedClasses = [classes.sideDrawer, classes.Open]
     }
 
     return(

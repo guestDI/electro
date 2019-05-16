@@ -32,27 +32,31 @@ class RequestForm extends Component {
                             </button>
                         </div>
                         <div className="modal-body">
-                            <form className={classes.contact_form}>
+                            <div className="row" style={{paddingBottom: '10px'}}>
+                                <span className={`col-md-12 col-sm-12 ${classes.desc}`}>
+                                    Здесь вы можете оставить заявку на интересющий вас инструмент. Укажите имя, контактный  телефон
+                                    и инструмент, который вы хотели бы взять в аренду. Наши специалисты свяжутся с вами в кратчайшие сроки.
+                                    Вы также можете указать тип работ и мы подскажем, какой инструмент лучше всего вам подойдет.
+                                </span>
+                            </div>
+                            <form className={classes.request_form}>
                                 <div className="row">
                                     <div className={`${classes.input} col-md-6`} style={{paddingRight: '10px'}}>
+                                        <span>Ваше имя <span style={{color: 'red'}}>*</span></span>
                                         <Input className={classes.input_field} required min="3" max="20" type="text" onTextChanged={this.onUsernameChanged}
                                                name="name" placeholder="Ваше имя" />
                                     </div>
                                     <div className={`${classes.input} col-md-6`} style={{paddingLeft: '25px'}}>
+                                        <span>Телефон <span style={{color: 'red'}}>*</span></span>
                                         <Input className={classes.input_field} required min="9" max="17" type="text" onTextChanged={this.onSubjectChanged}
                                                name="phone" placeholder="Телефон" />
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="col-md-12 input-box">
-                                        <Input className="input-field" required min="6" max="14" type="text" onTextChanged={this.onSubjectChanged}
-                                               name="subject" placeholder="Subject" />
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-md-12 input-box">
-                        <Textarea className="message-input-field" required min="6" max="256" type="text" onTextChanged={this.onMessageChanged}
-                                  name="message" placeholder="Message" />
+                                    <div className={`col-md-12 ${classes.input}`}>
+                                        <span>Сообщение <span style={{color: 'red'}}>*</span></span>
+                                        <Textarea className={`${classes.input_field} ${classes.input_field__message}`} required min="6" max="256" type="text" onTextChanged={this.onMessageChanged}
+                                            name="message" placeholder="Сообщение" />
                                     </div>
                                 </div>
                             </form>

@@ -1,4 +1,4 @@
-.SideDrawer{
+.sideDrawer{
     position: fixed;
     width: 250px;
     max-width: 70%;
@@ -10,6 +10,32 @@
     padding: 32px 16px;
     box-sizing: border-box;
     transition: transform 0.3s ease-out;
+}
+
+.sideDrawer nav {
+    text-decoration: none;
+    list-style: none;
+}
+
+.sideDrawer li {
+    padding: 15px 0 0 10px;
+    /*border-bottom: solid #c3c3c3 1px;*/
+}
+
+.sideDrawer nav li a{
+    /*color: #000000;*/
+    font-size: 18px;
+    /*padding-bottom: 5px;*/
+}
+
+.sideDrawer nav li div{
+    /*color: #000000;*/
+    font-size: 18px;
+    /*padding-bottom: 5px;*/
+}
+
+.sideDrawer nav li a {
+    color: #212529;
 }
 
 @media (min-width: 500px) {
