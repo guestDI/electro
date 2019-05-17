@@ -1,0 +1,22 @@
+.shelfCard{
+    width: 16rem;
+    margin: 3px 3px;
+    max-height: 17rem;
+}
+
+.shelfCard_text{
+  font-size: 12px;
+}
+
+.shelfCard_img{
+    max-height: 210px;
+}
+
+.shelfCard:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: .4s ease-out;
+    cursor: pointer;
+    z-index: 90;
+}

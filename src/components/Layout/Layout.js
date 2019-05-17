@@ -4,6 +4,7 @@ import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 import Footer from '../../components/Footer/Footer';
 import RequestForm from '../RequestForm/RequestForm';
+import StockView from '../StockView/StockView';
 
 class Layout extends Component{
     state = {
@@ -24,6 +25,7 @@ class Layout extends Component{
       return (
           <div className={classes.Wrapper}>
               <RequestForm/>
+              <StockView/>
               <div>
                   <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler}/>
                   <SideDrawer open={this.state.showSideDrawer} closed={this.sideDrawerClosedHandler}/>

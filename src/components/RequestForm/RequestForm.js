@@ -5,21 +5,7 @@ import Textarea from '../../components/Textarea/Textarea'
 import classes from "./RequestForm.module.css";
 
 class RequestForm extends Component {
-    // static defaultProps = {
-    //     isModal: true
-    // };
-
-    // onClose = () => {
-    //     this.props.history.goBack();
-    // };
-    //
-    // login = (e) => {
-    //     e.preventDefault(e);
-    //     this.props.history.push('home');
-    // }
-
     render() {
-        // console.log('call')
         return (
             <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog"
                  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

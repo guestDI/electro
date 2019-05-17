@@ -1,4 +1,4 @@
-export const IMAGES =
+export const EQUIPMENT =
     [{
         src: "https://images.by.prom.st/72453012_w640_h640_drel-bosch-gbm.jpg",
         thumbnail: "https://www.luxdeco.com/styleguide/wp-content/uploads/2015/02/Luxury-Modern-Interior-Design-Deborah-Oppenheimer-Header.jpg",

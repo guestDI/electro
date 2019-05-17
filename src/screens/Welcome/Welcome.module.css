@@ -9,6 +9,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    filter: grayscale(30%);
 }
 
 .Row_centered{
@@ -134,4 +135,12 @@ hr{
     padding-top: 20px;
     font-size: 16px;
     color: #777777;
+}
+
+.equipment_row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
 }

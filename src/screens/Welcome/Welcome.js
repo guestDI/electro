@@ -119,9 +119,9 @@ class Welcome extends Component {
                                 <hr/>
                             </div>
                         </div>
-                    </div>
-                    <div className="row mr-0 ml-0">
-                        <Shelf/>
+                        <div className="row">
+                            <Shelf/>
+                        </div>
                     </div>
                 </section>
 
