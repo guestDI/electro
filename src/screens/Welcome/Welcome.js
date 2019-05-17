@@ -13,7 +13,8 @@ class Welcome extends Component {
             team: [
                 {
                     name: "Ryan Reynolds",
-                    avatar: "https://st1.bollywoodlife.com/wp-content/uploads/2018/07/1216-GQ-FERR02-01-Ryan-Reynolds-Deadpool-04.jpg",
+                    // avatar: "https://st1.bollywoodlife.com/wp-content/uploads/2018/07/1216-GQ-FERR02-01-Ryan-Reynolds-Deadpool-04.jpg",
+                    avatar: "../../assets/images/anonim.png",
                     about: "Weird. My daughter JUST stabbed me in the right eye. (She’s not a ninja, but she IS a bit of a dick) Point is, We can finally trade roles... (Happy Birthday Bubba!)",
                 },
                 {

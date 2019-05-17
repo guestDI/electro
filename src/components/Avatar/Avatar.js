@@ -3,10 +3,10 @@ import classes from './Avatar.module.css';
 
 const avatar = (props) => {
     const contentStyle = props.active ?
-        `${classes.Avatar} ${classes.Active} clearfix` : `${classes.Avatar} clearfix`
+        `${classes.avatar} ${classes.active} clearfix` : `${classes.avatar} clearfix`
 
     return (
-        <div className={contentStyle} style={{backgroundImage: `url(${props.image})`, }}/>
+        <div className={contentStyle} />
     )
 }
 

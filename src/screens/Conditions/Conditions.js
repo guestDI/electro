@@ -5,40 +5,90 @@ import Button from '../../components/Button/Button';
 
 const conditions = () => (
     <Hoc>
-        <section id="intro" className={classes.Intro_section}>
+        <section id="intro" className={classes.conditions_intro_section}>
             <div className="container">
-                <div className={`row ${classes.Row_centered}`}>
-                    <div className={`${classes.Welcome_header} col-md-10 ${classes.Col_centered}`}>
-                        <h2 className={classes.Text_upper_case}>
-                            Лучший выбор профессионального инструмента
+                <div className={`row ${classes.row_centered}`}>
+                    <div className={`${classes.Welcome_header} col-md-10 ${classes.col_centered}`}>
+                        <h2>
+                            Условия проката и оплата
                         </h2>
                         <hr/>
                     </div>
                     <div className="col m-0">
-                        <div className={`${classes.Subtext} col-md-8 ${classes.Col_centered}`}>
-                            <p>Низкие цены. Быстрая доставка. Индивидуальный подход.</p>
+                        <div className={`${classes.Subtext} col-md-8 ${classes.col_centered}`}>
+                            <h4>+375 29 666-66-66</h4>
+                            <h4>+375 44 666-66-66</h4>
                         </div>
-                        <div className={classes.Get_started_wrapper}>
-                            <Button title="Оставить заявку"/>
-                            <div className="scroll_down" >
-                                <div className="scroll_down__button" style={{display: "block"}}/>
-                            </div>
+                        <div className={classes.catalog_button_wrapper}>
+                            <Button title="Посмотреть каталог"/>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="content" className="container-fluid">
-            <p>
-                Клиентом проката может стать любой совершеннолетний гражданин Республики Беларусь.
-            </p>
-            <p>
-                Предварительно уточняйте наличие инструмента по указанным на сайте номерам телефонов.
-                Возможно бронирование.
+        <section id="howTo" className={classes.how_to}>
+            <div className="container">
+                <div className={`row ${classes.row_centered}`}>
+                    <div className={`col-md-8 ${classes.col_centered}`}>
+                        <h2 >Как взять предмет в прокат</h2>
+                        <hr/>
+                    </div>
+                </div>
+                <div className="row">
+                    <ol>
+                        <li>Выберите интересующий Вас предмет проката.</li>
+                        <li>Позвоните по номеру <strong>+375 (29) 666-66-66</strong> либо <strong>+375 (33) 666-66-66</strong> и уточните наличие заинтересовавшего Вас предмета. Получите консультацию по заинтересовавшему Вас предмету проката.</li>
+                        <li>Закажите доставку курьером либо заберите самостоятельно.</li>
+                        <li>Вы также можете оставить заявку на сайте и наши менеджеры свяжутся с вами в кратчайшие сроки.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
 
-                Оборудование сдается в аренду без залога, однако менеджер оставляет за собой право потребовать залог в сумме 20-50% от коммерческой стоимости оборудования или отказать в выдаче оборудования в аренду без объяснения причин.
-            </p>
+        <section id="notes" className={classes.how_to}>
+            <div className="container">
+                <div className={`row ${classes.row_centered}`}>
+                    <div className={`col-md-8 ${classes.col_centered}`}>
+                        <h2 >ВАЖНО!</h2>
+                        <hr/>
+                    </div>
+                </div>
+                <div className="row">
+                    <ul>
+                        <li>Для заключения договора проката, Вам необходимо иметь личный паспорт гражданина Республики Беларусь.</li>
+                        <li>Оплата только наличными и только белорусскими рублями.</li>
+                        <li>Предметы проката необходимо вернуть в исправном, укомплектованном и чистом виде.
+                            При возврате предмета проката в загрязненном виде придётся оплатить штраф, в размере 10 рублей за каждый загрязненный предмет проката.</li>
+                        <li>При возврате предмета проката в некомплекте, необходимо доукомплектовать его за свой счет оригинальными частями.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="notes" className={classes.how_to}>
+            <div className="container">
+                <div className={`row ${classes.row_centered}`}>
+                    <div className={`col-md-8 ${classes.col_centered}`}>
+                        <h2 >Ответственность сторон</h2>
+                        <hr/>
+                    </div>
+                </div>
+                <div className="row">
+                    <ul>
+                        <li>Стороны несут имущественную ответственность за неисполнение или ненадлежащее исполнение условий Договора.</li>
+                        <li>Арендодатель не несет ответственности за ущерб здоровью или жизни, причиненный при использовании имущества Арендатором.</li>
+                        <li>Арендодатель не несет ответственность за прямые и косвенные убытки, причиненные Арендатору или
+                            третьей стороне использованием имущества.
+                        </li>
+                        <li>
+                            Если срок договора на пользование предметом проката истек, а Арендатор его не продлевает, не
+                            возвращает предмет или не сообщает о причинах не возврата, то к нему применяются санкции,
+                            предусматривающие ответственность граждан за невозврат предметов проката и/или, оформляется иск в суд о взыскании причиненного ущерба
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </Hoc>
 )

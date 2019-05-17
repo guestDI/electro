@@ -1,8 +1,8 @@
-.Intro_section{
-    min-height: 680px;
+.conditions_intro_section{
+    min-height: 400px;
     padding-bottom: 0;
     height: 100%;
-    padding-top: 70px;
+    padding-top: 20px;
     text-align: center;
     background: url('../../assets/images/ei-main.jpg') center center ;
     -webkit-background-size: cover;
@@ -11,12 +11,16 @@
     background-size: cover;
 }
 
-.Row_centered{
+.row_centered{
     text-align:center !important;
     justify-content: center;
 }
 
-.Col_centered{
+.how_to{
+    padding: 25px 0;
+}
+
+.col_centered{
     display:inline-block;
     float:none;
 }
@@ -40,6 +44,6 @@
     color: #ffffff;
 }
 
-.Get_started_wrapper{
-    padding: 70px 0 0;
+.catalog_button_wrapper{
+    padding: 40px 0 20px;
 }
