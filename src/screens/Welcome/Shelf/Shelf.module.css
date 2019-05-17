@@ -6,7 +6,7 @@
 }
 
 .Shelf .Shelf_img {
-    height: 400px;
+    height: 300px;
     width: 33.333333%;
     /*float: left;*/
     /*filter: grayscale(30%);*/
@@ -79,13 +79,15 @@
     background-position: center center;
 }
 
-.Shelf_img__info h5 {
-    letter-spacing: 2px;
+.Shelf_img__info h4 {
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: #fff;
+    color: #000000;
     z-index: 9;
     position: relative;
+    font-weight: bold;
     margin-bottom: 10px;
+    text-wrap: normal;
 }
 
 .Shelf_img__info p {

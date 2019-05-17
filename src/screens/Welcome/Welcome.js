@@ -111,7 +111,7 @@ class Welcome extends Component {
                     </div>
                 </section>
 
-                <section id="projects" className={classes.Equipment_section}>
+                <section id="equipment" className={classes.Equipment_section}>
                     <div className="container">
                         <div className={`${classes.Row_centered} row`}>
                             <div className={`col-md-8 ${classes.Col_centered}`}>
@@ -121,7 +121,7 @@ class Welcome extends Component {
                         </div>
                     </div>
                     <div className="row mr-0 ml-0">
-                        {/*<Shelf/>*/}
+                        <Shelf/>
                     </div>
                 </section>
 
