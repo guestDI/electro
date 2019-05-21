@@ -32,25 +32,25 @@ class Welcome extends Component {
     }
 
 
-    handleMemberClick = (index) => {
-        this.setState({
-            activeMember: index
-        })
-    }
+    // handleMemberClick = (index) => {
+    //     this.setState({
+    //         activeMember: index
+    //     })
+    // }
 
     render(){
 
-        let team = (
-            this.state.team.map((member, index) => {
-                let active = this.state.activeMember === index
-                return(
-                    <div key={`${index}`} className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <FeedbackTile  active={active} click={this.handleMemberClick.bind(this, index)} name={member.name}
-                                     avatar={member.avatar}/>
-                    </div>
-                )
-            })
-        )
+        // let team = (
+        //     this.state.team.map((member, index) => {
+        //         let active = this.state.activeMember === index
+        //         return(
+        //             <div key={`${index}`} className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        //                 <FeedbackTile  active={active} click={this.handleMemberClick.bind(this, index)} name={member.name}
+        //                              avatar={member.avatar}/>
+        //             </div>
+        //         )
+        //     })
+        // )
 
         return(
             <div id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -125,21 +125,21 @@ class Welcome extends Component {
                     </div>
                 </section>
 
-                <section id="team" className={classes.Reviews_section}>
+                <section id="team" className={classes.How_section}>
                     <div className="container" >
                         <div className={`row ${classes.Row_centered}`}>
                             <div className={`col-md-8 ${classes.Col_centered}`}>
-                                <h2 className={classes.Text_upper_case}>Мнение о нас</h2>
+                                <h2 className={classes.Text_upper_case}>Как мы работаем</h2>
                                 <hr/>
                             </div>
                         </div>
-                        <div className={`row ${classes.Person_row}`}>
-                            {team}
-                        </div>
-                        <div className={`row ${classes.Row_centered}`}>
-                            <div className={`col-md-8 ${classes.Col_centered} ${classes.Person_desc}`}>
-                                <p>{this.state.team[this.state.activeMember].about}</p>
-                            </div>
+                        <div className="row">
+                            <ol>
+                                <li>Выберите интересующий Вас предмет проката.</li>
+                                <li>Позвоните по номеру <strong>+375 (29) 666-66-66</strong> либо <strong>+375 (33) 666-66-66</strong> и уточните наличие заинтересовавшего Вас предмета. Получите консультацию по заинтересовавшему Вас предмету проката.</li>
+                                <li>Закажите доставку курьером либо заберите самостоятельно.</li>
+                                <li>Вы также можете оставить заявку на сайте и наши менеджеры свяжутся с вами в кратчайшие сроки.</li>
+                            </ol>
                         </div>
                     </div>
                 </section>

@@ -4,7 +4,8 @@
     height: 100%;
     padding-top: 70px;
     text-align: center;
-    background: url('../../assets/images/ei-main.jpg') center center ;
+    background-color: #6e737d;
+    /*background: url('../../assets/images/ei-main.jpg') center center ;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -105,6 +106,7 @@ hr{
     padding-top: 60px;
     text-align: center;
     background: #f9f9f9;
+    padding-bottom: 20px;
 }
 
 .Equipment_section .Equipment_row{
@@ -113,15 +115,15 @@ hr{
 }
 
 /*Feedback section*/
-.Reviews_section {
+.How_section {
     height: 100%;
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 50px;
     text-align: center;
     background: #fff;
 }
 
-.Reviews_section .Person_row{
+.How_section .Person_row{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -129,7 +131,7 @@ hr{
     padding-top: 20px;
 }
 
-.Reviews_section .Person_desc{
+.How_section .Person_desc{
     text-align: center;
     height: 120px;
     padding-top: 20px;

@@ -1,11 +1,10 @@
-.conditions_intro_section{
+.catalog_intro_section{
     min-height: 400px;
     padding-bottom: 10px;
     height: 100%;
     padding-top: 10px;
     text-align: center;
     background-color: #6e737d;
-    /*background: url('../../assets/images/ei-main.jpg') center center ;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
