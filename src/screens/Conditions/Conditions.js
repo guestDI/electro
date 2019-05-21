@@ -2,6 +2,7 @@ import React from 'react';
 import Hoc from '../../hoc/Hoc';
 import classes from './Conditions.module.css';
 import Button from '../../components/Button/Button';
+import { NavLink } from 'react-router-dom'
 
 const conditions = () => (
     <Hoc>
@@ -40,7 +41,8 @@ const conditions = () => (
                 </div>
                 <div className="row">
                     <ol>
-                        <li>Выберите интересующий Вас предмет проката.</li>
+                        <li>Выберите интересующий Вас предмет проката в нашем
+                            <NavLink to="equipment" title="Equipment"> каталоге</NavLink>.</li>
                         <li>Позвоните по номеру <strong>+375 (29) 666-66-66</strong> либо <strong>+375 (33) 666-66-66</strong> и уточните наличие заинтересовавшего Вас предмета. Получите консультацию по заинтересовавшему Вас предмету проката.</li>
                         <li>Закажите доставку курьером либо заберите самостоятельно.</li>
                         <li>Вы также можете оставить заявку на сайте и наши менеджеры свяжутся с вами в кратчайшие сроки.</li>

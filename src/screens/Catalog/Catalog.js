@@ -3,6 +3,7 @@ import Hoc from '../../hoc/Hoc';
 import classes from './Catalog.module.css';
 import Button from '../../components/Button/Button';
 import SideMenu from './SideMenu/SideMenu';
+import Shelf from './Shelf/Shelf';
 
 const catalog = (props) => (
     <Hoc>
@@ -38,12 +39,12 @@ const catalog = (props) => (
                         <hr/>
                     </div>
                 </div>
-                <div className="row">
+                <div className={`${classes.Catalog_row} row`} >
                     <div className="col col-md-4">
                         <SideMenu items={props.categories}/>
                     </div>
                     <div className="col col-md-8">
-                        General
+                        <Shelf/>
                     </div>
                 </div>
             </div>

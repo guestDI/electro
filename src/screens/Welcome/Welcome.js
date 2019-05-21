@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import classes from './Welcome.module.css';
-import Shelf from './Shelf/Shelf';
 import Button from '../../components/Button/Button';
 import FeedbackTile from '../Welcome/FeedbackTile/FeedbackTile';
 
@@ -120,7 +119,7 @@ class Welcome extends Component {
                             </div>
                         </div>
                         <div className="row">
-                            <Shelf/>
+                            {/*<Shelf/>*/}
                         </div>
                     </div>
                 </section>
