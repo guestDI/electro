@@ -6,7 +6,7 @@ import Hoc from '../../../hoc/Hoc';
 const sideMenu = (props) => {
     return(
         <Hoc>
-            <label>Прокат инструмента</label>
+            <label className={classes.Label}>Прокат инструмента</label>
             <div className={`${classes.SideMenu} list-group`}>
                 {props.items.map((i, ind) => {
                     return(
