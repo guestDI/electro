@@ -1,0 +1,12 @@
+.Shelf {
+    /*margin: auto;*/
+    width: 100%;
+    display: flex;
+    /*flex-flow: row wrap;*/
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}

@@ -4,29 +4,25 @@ import {getAllItems} from '../../api/axios-items';
 import {getAllCategories} from '../../api/axios-categories';
 
 class WelcomeContainer extends Component {
-    // state = {
-    //     categories: []
-    // };
-    //
-    // componentDidMount(){
-    //     getAllCategories()
-    //         .then(
-    //             response => console.log(response.data)
-    //         )
+    state = {
+        categories: []
+    };
 
-
-        // getAllItems()
-        //     .then(
-        //         response => console.log(response.data)
-        //     )
-
-        // console.log(this.state.categories)
-    // }
+    componentDidMount(){
+        getAllCategories()
+            .then(
+                response => {
+                    this.setState({
+                        categories: response.data.slice()
+                    })
+                }
+            )
+    }
 
     render() {
         return (
             <div>
-                <Welcome/>
+                <Welcome categories={this.state.categories}/>
             </div>
         );
     }
