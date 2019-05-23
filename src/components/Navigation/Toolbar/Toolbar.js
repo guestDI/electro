@@ -15,7 +15,7 @@ class Toolbar extends Component {
 
     componentDidMount() {
         document.addEventListener('scroll', () => {
-            const isTop = window.scrollY < 350;
+            const isTop = window.scrollY < 250;
             if (isTop !== this.state.isTop) {
                 this.onScroll(isTop);
             }

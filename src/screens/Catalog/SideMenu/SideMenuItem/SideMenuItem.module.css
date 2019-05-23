@@ -1,0 +1,21 @@
+.Item{
+    font-size: 14px;
+    text-space: 1.2;
+    font-weight: 400;
+    padding: 8px 12px !important;
+    background-color: inherit;
+    /*color: #ffffff;*/
+}
+
+.Item:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: .3s ease-out;
+    color: #ffffff;
+    background-color: #f0be3d;
+}
+
+.Item:focus{
+    color: #ffffff;
+    background-color: #f0be3d;
+}

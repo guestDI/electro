@@ -3,12 +3,14 @@ import classes from './Shelf.module.css'
 import {EQUIPMENT} from './test_data'
 import ShelfCard from './ShelfCard/ShelfCard';
 
-const shelf = () => {
+const shelf = (props) => {
     return(
         <ul className="list-group list-group-flush">
-            <ShelfCard/>
-            <ShelfCard/>
-            <ShelfCard/>
+            {props.data.map((it, ind) =>{
+                return(
+                    <ShelfCard itemData={it} key={`${ind}`}/>
+                    )
+            })}
         </ul>
     )
     // return (

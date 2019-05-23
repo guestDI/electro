@@ -39,12 +39,12 @@ const catalog = (props) => (
                         <hr/>
                     </div>
                 </div>
-                <div className={`${classes.Catalog_row} row`} >
-                    <div className="col col-md-4">
+                <div className={`${classes.Row} row`} >
+                    <div className="col col-md-3">
                         <SideMenu items={props.categories}/>
                     </div>
-                    <div className="col col-md-8">
-                        <Shelf/>
+                    <div className="col col-md-9">
+                        <Shelf data={props.items}/>
                     </div>
                 </div>
             </div>

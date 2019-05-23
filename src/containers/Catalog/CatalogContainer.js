@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import Catalog from '../../screens/Catalog/Catalog'
 import {getAllCategories} from '../../api/axios-categories';
+import {getAllItems} from '../../api/axios-items';
 
 class CatalogContainer extends Component {
     state = {
-        categories: []
+        categories: [],
+        items: []
     }
 
     componentDidMount(){
@@ -17,14 +19,21 @@ class CatalogContainer extends Component {
                 }
             )
 
-        // console.log(this.state.categories)
+        getAllItems()
+            .then(
+                response => {
+                    this.setState({
+                        items: response.data.slice()
+                    })
+                }
+            )
 
     }
 
     render() {
         return (
             <div>
-                <Catalog categories={this.state.categories}/>
+                <Catalog categories={this.state.categories} items={this.state.items}/>
             </div>
         );
     }
