@@ -1,0 +1,71 @@
+.InstrumentCard{
+    width: 14rem;
+    margin: 3px 3px;
+    max-height: 12rem;
+    min-height: 12em;
+    align-items: center;
+}
+
+.InstrumentCard_text{
+    font-size: 10px;
+}
+
+.InstrumentCard_img{
+    max-width: 150px;
+    /*height: 30%;*/
+}
+
+.InstrumentCard:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: .4s ease-out;
+    cursor: pointer;
+    z-index: 90;
+}
+
+/**/
+
+.Catalog_btn {
+    padding: 0.5em 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #f0be3d;
+    display: inline-block;
+    font-size: 14px ;
+    border-radius: 10px;
+    max-height: 40px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    text-transform: none;
+    background-color: #f0be3d !important;
+}
+.Catalog_btn:before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+}
+.Catalog_btn:hover {
+    background-color: #f0be3d;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    transition: .4s ease-out;
+}
+.Catalog_btn:hover:before {
+    transform: skewX(-45deg) translateX(16em);
+    transition: all 0.5s ease-in-out;
+}
+

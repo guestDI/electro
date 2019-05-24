@@ -9,24 +9,30 @@
 .Item_wrapper{
     display: flex;
     flex-direction: row;
-    /*align-items: center;*/
+
+    align-items: center;
 }
 
 .Image{
     background-image: url("../../../../assets/images/instruments/bosch_drel.jpeg");
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
     background-size: cover;
     background-position: center center;
 }
 
+.Details{
+    width: 70%;
+    text-wrap: normal;
+}
+
 .Title{
-  font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
 }
 
 .Desc{
-    font-size: 13px;
+    font-size: 14px;
     padding-bottom: 5px;
 }
 
@@ -37,11 +43,18 @@
 
 }
 
-.shelfCard:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: .4s ease-out;
-    cursor: pointer;
-    z-index: 90;
+.Request_btn{
+    font-size: 11px ;
+    border-radius: 10px;
+    max-height: 40px;
+    font-weight: 500;
 }
+
+/*.Item_wrapper:hover{*/
+    /*-webkit-transform: scale(1.1);*/
+    /*-ms-transform: scale(1.1);*/
+    /*transform: scale(1.1);*/
+    /*transition: .4s ease-out;*/
+    /*cursor: pointer;*/
+    /*z-index: 90;*/
+/*}*/

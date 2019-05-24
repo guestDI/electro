@@ -1,16 +1,17 @@
 .InstrumentCard{
-    width: 16rem;
+    width: 14rem;
     margin: 3px 3px;
-    max-height: 17rem;
+    max-height: 12rem;
+    align-items: center;
 }
 
 .InstrumentCard_text{
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .InstrumentCard_img{
-    max-height: 210px;
-    width: 100%;
+    max-width: 150px;
+    /*height: 30%;*/
 }
 
 .InstrumentCard:hover{

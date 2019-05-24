@@ -1,6 +1,7 @@
 import React  from 'react';
 import classes from './Instruments.module.css'
 import InstrumentCard from './InstrumentCard/InstrumentCard';
+import InstrumentsListButton from './InstrumentsListButton/InstrumentsListButton';
 
 const instruments = props => {
     return (
@@ -10,6 +11,7 @@ const instruments = props => {
                     <InstrumentCard key={`${ind}`} equipment={eq}/>
                 )
             })}
+            <InstrumentsListButton/>
         </div>
     )
 }

@@ -23,9 +23,9 @@ const catalog = (props) => (
                             <h4>+375 29 666-66-66</h4>
                             <h4>+375 44 666-66-66</h4>
                         </div>
-                        <div className={classes.catalog_button_wrapper}>
-                            <Button title="Оставить заявку"/>
-                        </div>
+                        {/*<div className={classes.catalog_button_wrapper}>*/}
+                            {/*<Button title="Оставить заявку"/>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </div>
