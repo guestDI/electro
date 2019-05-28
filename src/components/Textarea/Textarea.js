@@ -33,7 +33,7 @@ class Textarea extends Component {
     }
 
     render() {
-        const {style = {}} = this.props
+        // const {style = {}} = this.props
         if(this.props.required){
             return (
                 <textarea className={this.props.className} style={this.props.style} minLength={this.props.min} maxLength={this.props.max} required type={this.props.type}

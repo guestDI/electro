@@ -2,7 +2,7 @@ import React from 'react';
 import Hoc from '../../hoc/Hoc';
 import classes from './Conditions.module.css';
 import Button from '../../components/Button/Button';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 const conditions = () => (
     <Hoc>

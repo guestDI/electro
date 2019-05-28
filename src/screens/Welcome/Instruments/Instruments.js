@@ -7,10 +7,14 @@ const instruments = props => {
     return (
         <div className={classes.Shelf}>
             {props.list.map((eq, ind) => {
-                return(
-                    <InstrumentCard key={`${ind}`} equipment={eq}/>
-                )
-            })}
+                // if(ind>=7){
+                //     return null;
+                // } else {
+                    return(
+                        <InstrumentCard key={`${ind}`} equipment={eq}/>
+                    )
+                // }
+            }).slice(0, 7)}
             <InstrumentsListButton/>
         </div>
     )

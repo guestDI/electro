@@ -1,16 +1,31 @@
 .InstrumentCard{
     width: 14rem;
+    height: 12rem;
     margin: 3px 3px;
-    max-height: 12rem;
+    max-height: 13rem;
     align-items: center;
+    display: flex;
+    border: 2px solid #828791;
 }
 
-.InstrumentCard_text{
-    font-size: 10px;
+.Img_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.Card_body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
 }
 
 .InstrumentCard_img{
-    max-width: 150px;
+    padding-top: 7px;
+    max-width: 120px;
+    max-height: 120px;
     /*height: 30%;*/
 }
 
@@ -21,4 +36,5 @@
     transition: .4s ease-out;
     cursor: pointer;
     z-index: 90;
+    /*border: 2px solid #f0be3d;*/
 }

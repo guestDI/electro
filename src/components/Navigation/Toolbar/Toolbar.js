@@ -38,16 +38,9 @@ class Toolbar extends Component {
 
         return (
             <header className={attachedClasses.join(' ')} >
-                {/*<div>MENU</div>*/}
                 <DrawerToggle clicked={this.props.drawerToggleClicked}/>
                 <nav className={`${classes.Tabs} navbar ${classes.DesktopOnly}`} style={{height: "3.75rem"}}>
-                    <NavigationItems/>
-                    {/*<li><NavLink to="/signUp" title="Sign Up">Sign Up</NavLink></li>*/}
-                    {/*<li><RouteLink to={{ pathname: "/signIn", state: { modal: true } }} title="Sign In"*/}
-                    {/*style={{outline: 'none', textDecoration: 'none'}}>*/}
-                    {/*Sign In*/}
-                    {/*</RouteLink></li>*/}
-                    {/*<li><RouteLink to={{ pathname: "/signIn", state: { modal: true } }} title="Sign In">Sign In</RouteLink></li>*/}
+                    <NavigationItems currentLocation={this.props.location.pathname}/>
                 </nav>
             </header>
         )

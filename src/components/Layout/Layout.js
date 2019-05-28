@@ -4,7 +4,7 @@ import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 import Footer from '../../components/Footer/Footer';
 import RequestForm from '../RequestForm/RequestForm';
-import StockView from '../StockView/StockView';
+import {withRouter} from 'react-router-dom';
 
 class Layout extends Component{
     state = {
@@ -25,9 +25,8 @@ class Layout extends Component{
       return (
           <div className={classes.Wrapper}>
               <RequestForm/>
-              <StockView/>
               <div>
-                  <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler}/>
+                  <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} location={this.props.location}/>
                   <SideDrawer open={this.state.showSideDrawer} closed={this.sideDrawerClosedHandler}/>
                   <main className={`${classes.Content} p-0`}>
                       {this.props.children}
@@ -39,4 +38,4 @@ class Layout extends Component{
   }
 }
 
-export default Layout;
+export default withRouter(Layout);

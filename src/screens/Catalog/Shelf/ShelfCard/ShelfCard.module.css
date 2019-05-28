@@ -1,3 +1,8 @@
+.Item_group{
+    padding-bottom: 30px;
+    padding-top: 25px;
+}
+
 .Item_group:first-child{
     padding-top: 0px !important;
 }
@@ -45,7 +50,7 @@
 
 .Request_btn{
     font-size: 11px ;
-    border-radius: 10px;
+    border-radius: 3px;
     max-height: 40px;
     font-weight: 500;
 }

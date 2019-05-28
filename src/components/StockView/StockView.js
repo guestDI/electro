@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Input from '../../components/Input/Input'
-import Textarea from '../../components/Textarea/Textarea'
 import Table from '../StockView/Table/Table';
 import classes from "./StockView.module.css";
 

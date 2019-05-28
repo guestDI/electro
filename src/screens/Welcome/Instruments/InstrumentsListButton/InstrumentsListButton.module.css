@@ -1,9 +1,9 @@
-.InstrumentCard{
+.InstrumentListCard{
     width: 14rem;
+    height: 12rem;
     margin: 3px 3px;
-    max-height: 12rem;
-    min-height: 12em;
     align-items: center;
+    border: 2px solid #828791;
 }
 
 .InstrumentCard_text{
@@ -11,17 +11,19 @@
 }
 
 .InstrumentCard_img{
-    max-width: 150px;
+    /*max-width: 150px;*/
+    max-height: 150px;
     /*height: 30%;*/
 }
 
-.InstrumentCard:hover{
+.InstrumentListCard:hover{
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     transition: .4s ease-out;
     cursor: pointer;
     z-index: 90;
+    /*border: 2px solid #f0be3d;*/
 }
 
 /**/
@@ -34,7 +36,7 @@
     border: 2px solid #f0be3d;
     display: inline-block;
     font-size: 14px ;
-    border-radius: 10px;
+    border-radius: 2px;
     max-height: 40px;
     font-weight: 500;
     transition: all 0.2s ease-in-out;

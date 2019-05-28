@@ -1,7 +1,6 @@
 import React from 'react';
 import Hoc from '../../hoc/Hoc';
 import classes from './Catalog.module.css';
-import Button from '../../components/Button/Button';
 import SideMenu from './SideMenu/SideMenu';
 import Shelf from './Shelf/Shelf';
 
@@ -12,7 +11,7 @@ const catalog = (props) => (
                 <div className={`row ${classes.row_centered}`}>
                     <div className={`${classes.Welcome_header} col-md-10 ${classes.col_centered}`}>
                         <h2>
-                            Каталог инструмента
+                            Каталог
                         </h2>
                         <hr/>
                     </div>
@@ -43,7 +42,7 @@ const catalog = (props) => (
                     <div className="col col-md-3">
                         <SideMenu items={props.categories}/>
                     </div>
-                    <div className="col col-md-9">
+                    <div className="col col-md-9 col-sm-1">
                         <Shelf data={props.items}/>
                     </div>
                 </div>
