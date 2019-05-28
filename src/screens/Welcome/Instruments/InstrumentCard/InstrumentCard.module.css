@@ -5,7 +5,7 @@
     max-height: 13rem;
     align-items: center;
     display: flex;
-    border: 2px solid #828791;
+    border: 0.1rem solid #51545e;
 }
 
 .Img_wrapper{

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
  import Input from '../../components/Input/Input'
 import Textarea from '../../components/Textarea/Textarea'
-// import CommonButton from '../../shared_components/CommonButton/index'
 import classes from "./RequestForm.module.css";
 
 class RequestForm extends Component {

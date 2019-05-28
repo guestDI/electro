@@ -3,7 +3,7 @@
     height: 12rem;
     margin: 3px 3px;
     align-items: center;
-    border: 2px solid #828791;
+    border: 0.1rem solid #51545e;
 }
 
 .InstrumentCard_text{

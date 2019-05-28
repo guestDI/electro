@@ -16,7 +16,7 @@ const shelfCard = props => {
                     <span className={classes.Desc}>{props.itemData.description}</span>
                     <div className={attachedClass.join(' ')}>{attachedText}</div>
                 </div>
-                <Button Custom_btn={classes.Request_btn} title="Оставить заявку"/>
+                <Button custom_btn={classes.Request_btn} title="Оставить заявку"/>
             </div>
         </div>
     )
