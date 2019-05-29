@@ -5,11 +5,15 @@ import classes from "./RequestForm.module.css";
 import { saveApplication } from "../../api/axios-applications"
 
 class RequestForm extends Component {
-    state = {
-        name: "",
-        phone: "",
-        description: ""
-    };
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            name: "",
+            phone: "",
+            description: ""
+        };
+    }
 
     onUsernameChanged = text => {
         this.setState({
@@ -57,7 +61,7 @@ class RequestForm extends Component {
                                     Вы также можете указать тип работ и мы подскажем, какой инструмент лучше всего вам подойдет.
                                 </span>
                             </div>
-                            <form className={classes.request_form}>
+                            <form className={classes.request_form} id="requestForm">
                                 <div className="row">
                                     <div className={`${classes.input} col-md-6`} style={{paddingRight: '10px'}}>
                                         <span>Ваше имя <span style={{color: 'red'}}>*</span></span>
@@ -66,8 +70,8 @@ class RequestForm extends Component {
                                     </div>
                                     <div className={`${classes.input} col-md-6`} style={{paddingLeft: '25px'}}>
                                         <span>Телефон <span style={{color: 'red'}}>*</span></span>
-                                        <Input className={classes.input_field} required min="9" max="17" type="text" onTextChanged={this.onPhoneChanged}
-                                               name="phone" placeholder="Телефон" />
+                                        <Input className={classes.input_field} required min="9" max="17" type="text"
+                                               onTextChanged={this.onPhoneChanged} name="phone" placeholder="Телефон"/>
                                     </div>
                                 </div>
                                 <div className="row">
@@ -81,8 +85,9 @@ class RequestForm extends Component {
                             </form>
                         </div>
                         <div className="modal-footer">
-                            <button type="button" className="btn btn-secondary" data-dismiss="modal">Отмена</button>
-                            <button type="button" className={`btn ${classes.primary_button}`} onClick={this.addApplication} data-dismiss="modal">Подтвердить</button>
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal" id="mod_cls">Отмена</button>
+                            <button type="button" className={`btn ${classes.primary_button}`} onClick={this.addApplication}
+                                    data-dismiss="modal" id="mod_sbm">Подтвердить</button>
                         </div>
                     </div>
                 </div>

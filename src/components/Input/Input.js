@@ -36,9 +36,10 @@ class Input extends Component {
         // const {style = {}} = this.props
         if(this.props.required){
             return (
-                <input className={this.props.className} style={this.props.style} minLength={this.props.min} maxLength={this.props.max} required type={this.props.type}
-                       onChange={this.onChange} value={this.props.field} name={this.props.name} placeholder={this.props.placeholder}
-                       pattern={this.props.pattern} disabled={this.props.disabled} onKeyDown={this.onKeyChanged}/>
+                <input className={this.props.className} style={this.props.style} minLength={this.props.min} maxLength={this.props.max}
+                       required type={this.props.type} onChange={this.onChange} value={this.props.field} name={this.props.name}
+                       placeholder={this.props.placeholder} pattern={this.props.pattern} disabled={this.props.disabled}
+                       onKeyDown={this.onKeyChanged}/>
             )
         } else {
             return (
