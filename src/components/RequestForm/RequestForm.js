@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Input from '../../components/Input/Input'
 import Textarea from '../../components/Textarea/Textarea'
 import classes from "./RequestForm.module.css";
-import { saveApplication } from "../../api/axios-applications"
+import { saveApplication } from "../../api/axios-applications";
+import moment from 'moment';
 
 class RequestForm extends Component {
     constructor(props) {
@@ -11,7 +12,8 @@ class RequestForm extends Component {
         this.state = {
             name: "",
             phone: "",
-            description: ""
+            description: "",
+            applicationDate: moment(new Date()).format('YYYY-MM-DDTHH:mm:ss')
         };
     }
 
@@ -34,9 +36,12 @@ class RequestForm extends Component {
         })
     }
 
-    addApplication = () => {
+    addApplication = e => {
+        e.preventDefault(e);
+
         saveApplication(this.state)
             .then(response => console.log(response))
+
     }
 
 
@@ -61,12 +66,13 @@ class RequestForm extends Component {
                                     Вы также можете указать тип работ и мы подскажем, какой инструмент лучше всего вам подойдет.
                                 </span>
                             </div>
-                            <form className={classes.request_form} id="requestForm">
+                            <form className={classes.request_form} id="requestForm" onSubmit={this.addApplication}>
                                 <div className="row">
                                     <div className={`${classes.input} col-md-6`} style={{paddingRight: '10px'}}>
                                         <span>Ваше имя <span style={{color: 'red'}}>*</span></span>
-                                        <Input className={classes.input_field} required min="3" max="20" type="text" onTextChanged={this.onUsernameChanged}
-                                               name="name" placeholder="Ваше имя" />
+                                        <Input className={classes.input_field} required min="3" max="20" type="text"
+                                               onTextChanged={this.onUsernameChanged} name="name"
+                                               placeholder="Ваше имя" />
                                     </div>
                                     <div className={`${classes.input} col-md-6`} style={{paddingLeft: '25px'}}>
                                         <span>Телефон <span style={{color: 'red'}}>*</span></span>
@@ -82,12 +88,13 @@ class RequestForm extends Component {
                                             name="message" placeholder="Сообщение" />
                                     </div>
                                 </div>
+                                <div className="modal-footer">
+                                    <button type="button" className="btn btn-secondary" data-dismiss="modal" id="mod_cls"
+                                            style={{fontSize: '13px'}}>Отмена</button>
+                                    <button type="submit" className={`btn ${classes.primary_button}`}
+                                            style={{fontSize: '13px'}} data-dismiss="modal" id="mod_sbm">Подтвердить</button>
+                                </div>
                             </form>
-                        </div>
-                        <div className="modal-footer">
-                            <button type="button" className="btn btn-secondary" data-dismiss="modal" id="mod_cls">Отмена</button>
-                            <button type="button" className={`btn ${classes.primary_button}`} onClick={this.addApplication}
-                                    data-dismiss="modal" id="mod_sbm">Подтвердить</button>
                         </div>
                     </div>
                 </div>

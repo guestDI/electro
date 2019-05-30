@@ -8,3 +8,6 @@ export const getAllItems = () => (
     instance.get("/getAllItems")
 )
 
+export const getItemsByCategory = (id) => (
+    instance.get("/getItemsByCategory/" + id)
+)

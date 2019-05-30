@@ -29,7 +29,8 @@
 
 .Tabs {
     /*margin-top: 7px;*/
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 800;
     padding: 0px;
     list-style: none;
     background: transparent;

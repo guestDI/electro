@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Catalog from '../../screens/Catalog/Catalog'
 import {getAllCategories} from '../../api/axios-categories';
-import {getAllItems} from '../../api/axios-items';
+import {getAllItems, getItemsByCategory} from '../../api/axios-items';
 
 class CatalogContainer extends Component {
     state = {
