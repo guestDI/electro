@@ -26,7 +26,19 @@ class CatalogContainer extends Component {
                 }
             )
 
-        getAllItems()
+
+        // getAllItems()
+        //     .then(
+        //         response => {
+        //             this.setState({
+        //                 items: response.data.slice()
+        //             })
+        //         }
+        //     )
+
+        // let id = this.props.location.state.id ? this.props.location.state.id : 1
+
+        getItemsByCategory(this.props.location.state.id)
             .then(
                 response => {
                     this.setState({
@@ -34,7 +46,6 @@ class CatalogContainer extends Component {
                     })
                 }
             )
-
     }
 
     render() {

@@ -81,7 +81,7 @@ class Welcome extends Component {
                             </div>
                         </div>
                         <div className="row">
-                            <Instruments list={this.props.categories}/>
+                            <Instruments list={this.props.categories} redirect={this.props.goToCatalog}/>
                         </div>
                     </div>
                 </section>

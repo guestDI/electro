@@ -11,7 +11,7 @@ const instruments = props => {
                 //     return null;
                 // } else {
                     return(
-                        <InstrumentCard key={`${ind}`} equipment={eq}/>
+                        <InstrumentCard key={`${ind}`} equipment={eq} onClick={props.redirect}/>
                     )
                 // }
             }).slice(0, 7)}
