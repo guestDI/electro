@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Catalog from '../../screens/Catalog/Catalog'
 import {getAllCategories} from '../../api/axios-categories';
 import {getAllItems, getItemsByCategory} from '../../api/axios-items';
+import {animateScroll} from 'react-scroll';
 
 class CatalogContainer extends Component {
     state = {
@@ -10,6 +11,12 @@ class CatalogContainer extends Component {
     }
 
     componentDidMount(){
+        animateScroll.scrollToTop({
+            duration: 600,
+            delay: 0,
+            smooth: 'easeInOutQuart'
+        })
+
         getAllCategories()
             .then(
                 response => {
