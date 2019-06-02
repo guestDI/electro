@@ -7,7 +7,8 @@ import {animateScroll} from 'react-scroll';
 class CatalogContainer extends Component {
     state = {
         categories: [],
-        items: []
+        items: [],
+        id: 1
     }
 
     componentDidMount(){
@@ -26,14 +27,17 @@ class CatalogContainer extends Component {
                 }
             )
 
-        let id = null;
+        let temp_id = null;
         if(this.props.location.state){
-            id = this.props.location.state.id
+            temp_id = this.props.location.state.id
+            this.setState({
+                id: this.props.location.state.id
+            })
         } else {
-            id = 1
+            temp_id = 1
         }
         // console.log(id)
-        getItemsByCategory(id)
+        getItemsByCategory(temp_id)
             .then(
                 response => {
                     this.setState({
@@ -57,7 +61,9 @@ class CatalogContainer extends Component {
     render() {
         return (
             <div>
-                <Catalog categories={this.state.categories} items={this.state.items} getItemsByCategory={this.getItems}/>
+                <Catalog categories={this.state.categories} items={this.state.items} getItemsByCategory={this.getItems}
+                         catId={this.state.id}
+                />
             </div>
         );
     }

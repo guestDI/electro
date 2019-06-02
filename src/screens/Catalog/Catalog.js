@@ -41,7 +41,7 @@ const catalog = (props) => {
                     </div>
                     <div className={`${classes.Row} row`}>
                         <div className="col col-md-3">
-                            <SideMenu items={props.categories} getItems={props.getItemsByCategory}/>
+                            <SideMenu items={props.categories} getItems={props.getItemsByCategory} categoryId={props.catId}/>
                         </div>
                         <div className="col col-md-9 col-sm-1">
                             <Shelf data={props.items}/>

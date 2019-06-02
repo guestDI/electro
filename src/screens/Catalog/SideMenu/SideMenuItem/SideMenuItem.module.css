@@ -19,3 +19,8 @@
     color: #ffffff;
     background-color: #f0be3d;
 }
+
+.Item:active{
+    color: #ffffff;
+    background-color: #f0be3d;
+}

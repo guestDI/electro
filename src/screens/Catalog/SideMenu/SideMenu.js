@@ -4,13 +4,14 @@ import SideMenuItem from './SideMenuItem/SideMenuItem';
 import Hoc from '../../../hoc/Hoc';
 
 const sideMenu = (props) => {
+
     return(
         <Hoc>
             <label className={classes.Label}>Прокат инструмента</label>
             <div className={`${classes.SideMenu} list-group`}>
                 {props.items.map((i, ind) => {
                     return(
-                        <SideMenuItem item={i} key={`${ind}`} getByCategory={props.getItems}/>
+                        <SideMenuItem item={i} key={`${ind}`}  category={props.categoryId} getByCategory={props.getItems}/>
                     )
                 })}
             </div>
