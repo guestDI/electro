@@ -11,11 +11,11 @@ const instruments = props => {
                 //     return null;
                 // } else {
                     return(
-                        <InstrumentCard key={`${ind}`} equipment={eq} onClick={props.redirect}/>
+                        <InstrumentCard key={`${ind}`} equipment={eq} onCatalogItemClick={props.redirect}/>
                     )
                 // }
             }).slice(0, 7)}
-            <InstrumentsListButton/>
+            <InstrumentsListButton onFullCatalogItemClick={props.redirect}/>
         </div>
     )
 }

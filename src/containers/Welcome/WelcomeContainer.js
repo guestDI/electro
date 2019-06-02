@@ -18,11 +18,11 @@ class WelcomeContainer extends Component {
             )
     }
 
-    redirectToCatalog = (e) => {
-        e.preventDefault();
+    redirectToCatalog = (id) => {
+        // e.preventDefault();
         this.props.history.push({
             pathname: 'equipment',
-            state: { id: 2 }
+            state: { id: id }
         })
     }
 

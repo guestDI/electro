@@ -2,9 +2,13 @@ import React, {Component} from 'react';
 import classes from './InstrumentsListButton.module.css';
 import { Redirect } from 'react-router'
 
-class instrumentsListButton extends Component{
+class InstrumentsListButton extends Component{
     state = {
         navigate: false
+    }
+
+    redirectToCatalog = () => {
+        this.props.onFullCatalogItemClick(1)
     }
 
     render(){
@@ -20,7 +24,7 @@ class instrumentsListButton extends Component{
                 <div className="card-body">
                     <h5 className="card-title">Посмотреть весь каталог</h5>
                     <div style={{paddingTop: '30px'}}>
-                        <button type="button" className={classes.Catalog_btn} onClick={() => this.setState({ navigate: true })}>Каталог</button>
+                        <button type="button" className={classes.Catalog_btn} onClick={this.redirectToCatalog}>Каталог</button>
                     </div>
                 </div>
             </div>
@@ -30,4 +34,4 @@ class instrumentsListButton extends Component{
 
 }
 
-export default instrumentsListButton;
+export default InstrumentsListButton;

@@ -26,19 +26,25 @@ class CatalogContainer extends Component {
                 }
             )
 
+        let id = null;
+        if(this.props.location.state){
+            id = this.props.location.state.id
+        } else {
+            id = 1
+        }
+        // console.log(id)
+        getItemsByCategory(id)
+            .then(
+                response => {
+                    this.setState({
+                        items: response.data.slice()
+                    })
+                }
+            )
+    }
 
-        // getAllItems()
-        //     .then(
-        //         response => {
-        //             this.setState({
-        //                 items: response.data.slice()
-        //             })
-        //         }
-        //     )
-
-        // let id = this.props.location.state.id ? this.props.location.state.id : 1
-
-        getItemsByCategory(this.props.location.state.id)
+    getItems = (id) => {
+        getItemsByCategory(id)
             .then(
                 response => {
                     this.setState({
@@ -51,7 +57,7 @@ class CatalogContainer extends Component {
     render() {
         return (
             <div>
-                <Catalog categories={this.state.categories} items={this.state.items}/>
+                <Catalog categories={this.state.categories} items={this.state.items} getItemsByCategory={this.getItems}/>
             </div>
         );
     }

@@ -10,7 +10,7 @@ const sideMenu = (props) => {
             <div className={`${classes.SideMenu} list-group`}>
                 {props.items.map((i, ind) => {
                     return(
-                        <SideMenuItem item={i} key={`${ind}`}/>
+                        <SideMenuItem item={i} key={`${ind}`} getByCategory={props.getItems}/>
                     )
                 })}
             </div>
