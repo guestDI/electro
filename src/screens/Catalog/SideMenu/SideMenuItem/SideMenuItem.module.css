@@ -20,7 +20,7 @@
     background-color: #f0be3d;
 }
 
-.Item:active{
-    color: #ffffff;
-    background-color: #f0be3d;
+.Item_active{
+    background-color: #f0be3d !important;
+    border-color: #f0be3d !important;;
 }

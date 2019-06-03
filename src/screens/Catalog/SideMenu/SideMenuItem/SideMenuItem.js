@@ -8,7 +8,7 @@ const sideMenuItem = (props) => {
 
     let attachedClasses = `${classes.Item} list-group-item list-group-item-action`;
     if(props.category === props.item.id){
-        attachedClasses = `${classes.Item} list-group-item list-group-item-action active`;
+        attachedClasses = `${classes.Item} list-group-item list-group-item-action`;
     }
 
     return(
