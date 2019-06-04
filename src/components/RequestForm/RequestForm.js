@@ -84,7 +84,7 @@ class RequestForm extends Component {
                                     </div>
                                     <div className={`${classes.input} col-md-6`} >
                                         <span style={{fontSize: '12px'}}>Телефон (+375)<span style={{color: 'red'}}>*</span></span>
-                                        <Input className={classes.input_field} required min="9" max="17" type="text"
+                                        <Input className={classes.input_field} required min="9" max="9" type="text" restrictType="text"
                                                onTextChanged={this.onPhoneChanged} name="phone" placeholder="Телефон"/>
                                     </div>
                                 </div>
@@ -92,7 +92,7 @@ class RequestForm extends Component {
                                     <div className={`col-md-12 ${classes.input}`}>
                                         <span style={{fontSize: '12px'}}>Сообщение <span style={{color: 'red'}}>*</span></span>
                                         <Textarea className={`${classes.input_field} ${classes.input_field__message}`}
-                                                  required min="6" max="256" type="text" onTextChanged={this.onMessageChanged}
+                                                  required min="6" max="500" type="text" onTextChanged={this.onMessageChanged}
                                             name="message" placeholder="Сообщение" />
                                     </div>
                                 </div>

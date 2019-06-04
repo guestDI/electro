@@ -52,8 +52,11 @@
 }
 
 .input_field__message{
+    box-sizing: border-box !important;
     height: 70px !important;
-    line-height:35px !important;
+    line-height:15px !important;
+    padding: 7px;
+    /*line-height: 1.1 !important;*/
 }
 
 .input_field::-webkit-input-placeholder { -webkit-transition: opacity .5s;
