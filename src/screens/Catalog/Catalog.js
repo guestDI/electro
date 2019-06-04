@@ -31,7 +31,7 @@ const catalog = (props) => {
                 </div>
             </section>
 
-            <section id="howTo" className={classes.how_to}>
+            <section id="stuff" className={classes.how_to}>
                 <div className="container-fluid">
                     <div className={`row ${classes.row_centered}`}>
                         <div className={`col-md-8 ${classes.col_centered}`}>

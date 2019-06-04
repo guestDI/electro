@@ -1,6 +1,6 @@
 .Item_group{
     padding-bottom: 30px;
-    padding-top: 25px;
+    padding-top: 20px;
 }
 
 .Item_group:first-child{
@@ -14,7 +14,7 @@
 .Item_wrapper{
     display: flex;
     flex-direction: row;
-    min-height: 140px;
+    min-height: 130px;
     align-items: center;
 }
 

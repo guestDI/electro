@@ -51,20 +51,23 @@ class Welcome extends Component {
                         </div>
                         <div className={`row ${classes.Advantages_section__row}`}>
                             <div className={`col-xs-12 col-sm-12 col-md-4 col-lg-4 ${classes.Tile}`}>
-                                <i className="material-icons">shop_two</i>
-                                {/*<img src={require('../../images/field.png')}  />*/}
+                                <img src={require("../../assets/images/icons/round_shop_two_black_48dp.png")}
+                                     style={{backgroundSize: 'cover', backgroundPosition: 'center center'}} alt=""/>
+                                {/*<i className="material-icons">shop_two</i>*/}
                                 <h3>Индивидуальный подход</h3>
                                 <p className={classes.Tile_desc}>Индивидуальный подход к каждому клиенту и гибкие цены</p>
                             </div>
                             <div className={`col-xs-12 col-sm-12 col-md-4 col-lg-4 ${classes.Tile}`}>
-                                <i className="material-icons">alarm</i>
-                                {/*<img src={require('../../images/rule.png')}  />*/}
+                                <img src={require("../../assets/images/icons/round_alarm_black_48dp.png")}
+                                     style={{backgroundSize: 'cover', backgroundPosition: 'center center'}} alt=""/>
+                                {/*<i className="material-icons">alarm</i>*/}
                                 <h3>Гибкий график</h3>
                                 <p className={classes.Tile_desc}>Гибкий график доставки инструмента, а также возможность продления</p>
                             </div>
                             <div className={`col-xs-12 col-sm-12 col-md-4 col-lg-4 ${classes.Tile}`}>
-                                {/*<img src={require('../../images/statistic.png')}  />*/}
-                                <i className="material-icons">library_books</i>
+                                <img src={require("../../assets/images/icons/round_library_books_black_48dp.png")}
+                                     style={{backgroundSize: 'cover', backgroundPosition: 'center center'}} alt=""/>
+                                {/*<i className="material-icons">library_books</i>*/}
                                 <h3>Широкий ассортимент</h3>
                                 <p className={classes.Tile_desc}>Широкий выбор инструментов разной категории</p>
                             </div>

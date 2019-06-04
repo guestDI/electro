@@ -7,20 +7,20 @@
     /*color: #ffffff;*/
 }
 
-/*.Item:hover{*/
-    /*cursor: pointer;*/
-    /*transform: scale(1.03);*/
-    /*transition: .3s ease-out;*/
-    /*color: #ffffff;*/
-    /*background-color: #f0be3d;*/
-/*}*/
+.Item:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: .3s ease-out;
+    color: #ffffff;
+    background-color: #f0be3d;
+}
 
-/*.Item:focus{*/
-    /*color: #ffffff;*/
-    /*background-color: #f0be3d;*/
-/*}*/
+.Item:focus{
+    color: #ffffff;
+    background-color: #f0be3d;
+}
 
-/*.Item_active{*/
-    /*background-color: #f0be3d !important;*/
-    /*border-color: #f0be3d !important;;*/
-/*}*/
+.Item_active{
+    background-color: #f0be3d !important;
+    border-color: #f0be3d !important;;
+}
