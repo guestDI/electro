@@ -24,6 +24,10 @@
     padding-bottom: 15px;
 }
 
+.error {
+    border-color: red;
+}
+
 .message{
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -42,8 +46,8 @@
     /*text-align: left;*/
     margin: 0em;
     outline: none;
-    border-radius: 5px;
-    border: solid 1px #777777;
+    border-radius: 2px;
+    border: 0.1em solid #51545e;
     /*border-bottom: 2px solid #c3c2c4;*/
 }
 
@@ -81,6 +85,7 @@
 }
 
 .primary_button{
+    font-size: 13px;
     background-color: #f0be3d;
     color: #ffffff;
 }
@@ -88,4 +93,5 @@
 .primary_button:hover{
     background-color: #d7a53c;
     color: #ffffff;
+    cursor: pointer;
 }

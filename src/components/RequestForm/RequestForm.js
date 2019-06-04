@@ -15,6 +15,8 @@ class RequestForm extends Component {
             description: "",
             applicationDate: moment(new Date()).format('YYYY-MM-DDTHH:mm:ss')
         };
+
+        this.myRef = React.createRef();
     }
 
     onUsernameChanged = text => {
@@ -36,11 +38,16 @@ class RequestForm extends Component {
         })
     }
 
+    closeModal = () => {
+        this.myRef.current.click();
+    }
+
     addApplication = e => {
         e.preventDefault(e);
 
         saveApplication(this.state)
             .then(response => console.log(response))
+            .then(this.closeModal)
 
     }
 
@@ -69,20 +76,21 @@ class RequestForm extends Component {
                             <form className={classes.request_form} id="requestForm" onSubmit={this.addApplication}>
                                 <div className="row">
                                     <div className={`${classes.input} col-md-6`} style={{paddingRight: '10px'}}>
-                                        <span>Ваше имя <span style={{color: 'red'}}>*</span></span>
+                                        <span style={{fontSize: '12px'}}>Ваше имя <span style={{color: 'red'}}>*</span></span>
+                                        {/*<input required placeholder="Ваше имя" />*/}
                                         <Input className={classes.input_field} required min="3" max="20" type="text"
                                                onTextChanged={this.onUsernameChanged} name="name"
                                                placeholder="Ваше имя" />
                                     </div>
-                                    <div className={`${classes.input} col-md-6`} style={{paddingLeft: '25px'}}>
-                                        <span>Телефон <span style={{color: 'red'}}>*</span></span>
+                                    <div className={`${classes.input} col-md-6`} >
+                                        <span style={{fontSize: '12px'}}>Телефон (+375)<span style={{color: 'red'}}>*</span></span>
                                         <Input className={classes.input_field} required min="9" max="17" type="text"
                                                onTextChanged={this.onPhoneChanged} name="phone" placeholder="Телефон"/>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className={`col-md-12 ${classes.input}`}>
-                                        <span>Сообщение <span style={{color: 'red'}}>*</span></span>
+                                        <span style={{fontSize: '12px'}}>Сообщение <span style={{color: 'red'}}>*</span></span>
                                         <Textarea className={`${classes.input_field} ${classes.input_field__message}`}
                                                   required min="6" max="256" type="text" onTextChanged={this.onMessageChanged}
                                             name="message" placeholder="Сообщение" />
@@ -91,8 +99,10 @@ class RequestForm extends Component {
                                 <div className="modal-footer">
                                     <button type="button" className="btn btn-secondary" data-dismiss="modal" id="mod_cls"
                                             style={{fontSize: '13px'}}>Отмена</button>
-                                    <button type="submit" className={`btn ${classes.primary_button}`}
-                                            style={{fontSize: '13px'}} data-dismiss="modal" id="mod_sbm">Подтвердить</button>
+                                    <input type="submit" value="Отправить" className={`btn ${classes.primary_button}`}/>
+                                    {/*<button style={{display: 'none'}} data-dismiss="modal"/>*/}
+                                    <button ref={this.myRef} type="button" className={`btn `}
+                                            style={{fontSize: '13px', display: 'none'}} data-dismiss="modal" id="mod_sbm"/>
                                 </div>
                             </form>
                         </div>
