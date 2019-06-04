@@ -8,9 +8,10 @@ const shelfCard = props => {
     attachedClass = props.itemData.availability ? [...attachedClass, "badge-success"] : [...attachedClass, "badge-secondary"];
     let attachedText = props.itemData.availability ? "В наличии" : "Нет в наличии";
     return(
-        <div className={`list-group-item ${classes.Item_group}`}>
+        <div className={`list-group-item ${classes.Item_group} container-fluid`}>
             <div className={classes.Item_wrapper}>
-                <div className={classes.Image}></div>
+                <img className={`card-img-top ${classes.Image}`} src={`${props.itemData.itemPhoto}`}
+                     alt={props.itemData.name}/>
                 <div className={`d-flex flex-column ${classes.Details}`} style={{paddingLeft: '20px'}}>
                     <span className={classes.Title}>{props.itemData.name}</span>
                     <span className={classes.Desc}>{props.itemData.description}</span>

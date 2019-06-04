@@ -19,8 +19,7 @@
 }
 
 .Image{
-    background-image: url("../../../../assets/images/instruments/bosch_drel.jpeg");
-    height: 90px;
+    /*height: 90px;*/
     width: 90px;
     background-size: cover;
     background-position: center center;
@@ -37,8 +36,8 @@
 }
 
 .Desc{
-    font-size: 14px;
-    padding-bottom: 5px;
+    font-size: 13px;
+    padding: 0 10px 5px 0;
 }
 
 .Status{
