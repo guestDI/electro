@@ -3,12 +3,18 @@ import ShelfCard from './ShelfCard/ShelfCard';
 import Button from '../../../components/Button/Button';
 
 const shelf = (props) => {
+    function itemRequested(text) {
+        if(props.onItemRequested){
+            props.onItemRequested(text)
+        }
+    }
+
     if(props.data && props.data.length > 0){
         return(
             <ul className="list-group list-group-flush" style={{paddingTop: '35px'}}>
                 {props.data.map((it, ind) =>{
                     return(
-                        <ShelfCard itemData={it} key={`${ind}`}/>
+                        <ShelfCard itemData={it} key={`${ind}`} itemRequested={itemRequested}/>
                     )
                 })}
             </ul>

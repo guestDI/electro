@@ -5,6 +5,12 @@ import SideMenu from './SideMenu/SideMenu';
 import Shelf from './Shelf/Shelf';
 
 const catalog = (props) => {
+    function onItemRequested(text){
+        if(props.onRequest){
+           props.onRequest(text)
+        }
+    }
+
     return(
         <Hoc>
             <section id="intro" className={classes.catalog_intro_section}>
@@ -44,7 +50,7 @@ const catalog = (props) => {
                             <SideMenu items={props.categories} getItems={props.getItemsByCategory} categoryId={props.catId}/>
                         </div>
                         <div className="col col-md-9 col-sm-1">
-                            <Shelf data={props.items}/>
+                            <Shelf data={props.items} onItemRequested={onItemRequested}/>
                         </div>
                     </div>
                 </div>

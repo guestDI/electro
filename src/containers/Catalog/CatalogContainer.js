@@ -3,12 +3,17 @@ import Catalog from '../../screens/Catalog/Catalog'
 import {getAllCategories} from '../../api/axios-categories';
 import { getItemsByCategory} from '../../api/axios-items';
 import {animateScroll} from 'react-scroll';
+import RequestForm from '../../components/RequestForm/RequestForm';
 
 class CatalogContainer extends Component {
-    state = {
-        categories: [],
-        items: [],
-        id: 1
+    constructor(props){
+        super(props)
+        this.state = {
+            categories: [],
+            items: [],
+            id: 1,
+            name: ""
+        }
     }
 
     componentDidMount(){
@@ -58,11 +63,18 @@ class CatalogContainer extends Component {
             )
     }
 
+    onRequest = (text) => {
+        this.setState({
+            name: text
+        })
+    }
+
     render() {
         return (
             <div>
+                <RequestForm itemName={this.state.name}/>
                 <Catalog categories={this.state.categories} items={this.state.items} getItemsByCategory={this.getItems}
-                         catId={this.state.id}
+                         catId={this.state.id} onRequest={this.onRequest}
                 />
             </div>
         );

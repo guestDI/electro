@@ -3,12 +3,13 @@ import classes from './Layout.module.css';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 import Footer from '../../components/Footer/Footer';
-import RequestForm from '../RequestForm/RequestForm';
+
 import {withRouter} from 'react-router-dom';
 
 class Layout extends Component{
     state = {
-        showSideDrawer: false
+        showSideDrawer: false,
+        itemName: ""
     }
 
     sideDrawerClosedHandler = () => {
@@ -21,15 +22,23 @@ class Layout extends Component{
         })
     }
 
+
   render(){
+      const children = React.Children.map(this.props.children, (child, index) => {
+          return React.cloneElement(child, {
+              isActive: true
+          });
+      });
+
       return (
           <div className={classes.Wrapper}>
-              <RequestForm/>
+
               <div>
                   <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} location={this.props.location}/>
                   <SideDrawer open={this.state.showSideDrawer} closed={this.sideDrawerClosedHandler}/>
                   <main className={`${classes.Content} p-0`}>
-                      {this.props.children}
+                      {children}
+                      {/*{this.props.children}*/}
                   </main>
                   <Footer/>
               </div>

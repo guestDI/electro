@@ -3,7 +3,12 @@ import classes from './ShelfCard.module.css';
 import Button from '../../../../components/Button/Button';
 
 const shelfCard = props => {
-    //availability
+    function itemRequested() {
+        if(props.itemRequested){
+            props.itemRequested(props.itemData.name)
+        }
+    }
+
     let attachedClass = [classes.Status, "badge"]
     attachedClass = props.itemData.availability ? [...attachedClass, "badge-success"] : [...attachedClass, "badge-secondary"];
     let attachedText = props.itemData.availability ? "В наличии" : "Нет в наличии";
@@ -17,7 +22,7 @@ const shelfCard = props => {
                     <span className={classes.Desc}>{props.itemData.description}</span>
                     <div className={attachedClass.join(' ')}>{attachedText}</div>
                 </div>
-                <Button custom_btn={classes.Request_btn} title="Оставить заявку"/>
+                <Button custom_btn={classes.Request_btn} title="Оставить заявку" onClick={itemRequested}/>
             </div>
         </div>
     )

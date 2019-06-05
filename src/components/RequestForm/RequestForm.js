@@ -11,12 +11,22 @@ class RequestForm extends Component {
 
         this.state = {
             name: "",
+            itemName: "",
             phone: "",
             description: "",
             applicationDate: moment(new Date()).format('YYYY-MM-DDTHH:mm:ss')
         };
 
         this.myRef = React.createRef();
+    }
+
+    componentWillReceiveProps(nextProps, props){
+
+        if(this.props.itemName!==nextProps.itemName){
+            this.setState({
+                itemName: nextProps.itemName
+            })
+        }
     }
 
     onUsernameChanged = text => {
@@ -93,7 +103,7 @@ class RequestForm extends Component {
                                         <span style={{fontSize: '12px'}}>Сообщение <span style={{color: 'red'}}>*</span></span>
                                         <Textarea className={`${classes.input_field} ${classes.input_field__message}`}
                                                   required min="6" max="500" type="text" onTextChanged={this.onMessageChanged}
-                                            name="message" placeholder="Сообщение" />
+                                            name="message" placeholder="Сообщение" predefined={this.props.itemName}/>
                                     </div>
                                 </div>
                                 <div className="modal-footer">

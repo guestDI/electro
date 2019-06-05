@@ -4,7 +4,16 @@ class Textarea extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            field: this.props.field,
+            field: this.props.predefined,
+        }
+    }
+
+    componentWillReceiveProps(nextProps, props){
+
+        if(this.props.predefined!==nextProps.predefined){
+            this.setState({
+                field: nextProps.predefined
+            })
         }
     }
 
@@ -13,6 +22,7 @@ class Textarea extends Component {
         this.setState({
             field: value,
         });
+
         if (this.props.onTextChanged) {
             this.props.onTextChanged(value);
         }
@@ -33,17 +43,16 @@ class Textarea extends Component {
     }
 
     render() {
-        // const {style = {}} = this.props
         if(this.props.required){
             return (
                 <textarea className={this.props.className} style={this.props.style} minLength={this.props.min} maxLength={this.props.max} required type={this.props.type}
-                          onChange={this.onChange} value={this.props.field} name={this.props.name} placeholder={this.props.placeholder}
+                          onChange={this.onChange} value={this.state.field} name={this.props.name} placeholder={this.props.placeholder}
                           pattern={this.props.pattern} disabled={this.props.disabled} onKeyDown={this.onKeyChanged}/>
             )
         } else {
             return (
-                <textarea className={this.props.className} style={this.props.style} minLength={this.props.min} maxLength={this.props.max} type={this.props.type} onChange={this.onChange}
-                          value={this.props.field} name={this.props.name} placeholder={this.props.placeholder} disabled={this.props.disabled}
+                <textarea  className={this.props.className} style={this.props.style} minLength={this.props.min} maxLength={this.props.max} type={this.props.type} onChange={this.onChange}
+                          value={this.state.field} name={this.props.name} placeholder={this.props.placeholder} disabled={this.props.disabled}
                           pattern={this.props.pattern} onKeyDown={this.onKeyChanged}/>
             )
         }
