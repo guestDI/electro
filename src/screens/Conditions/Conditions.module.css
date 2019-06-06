@@ -41,8 +41,12 @@
 
 .Subtext{
     font-size: 1.7rem;
-    font-weight: 400;
+    font-weight: 600;
     color: #ffffff;
+}
+
+.Subtext h4{
+    font-weight: 600;
 }
 
 .catalog_button_wrapper{

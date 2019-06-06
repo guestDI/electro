@@ -4,6 +4,7 @@ import classes from './Welcome.module.css';
 import { NavLink } from 'react-router-dom'
 import Instruments from '../Welcome/Instruments/Instruments';
 
+
 class Welcome extends Component {
 
     // handleMemberClick = (index) => {
@@ -29,12 +30,8 @@ class Welcome extends Component {
                                     <p>Низкие цены. Быстрая доставка. Индивидуальный подход.</p>
                                 </div>
                                 <div className={classes.Get_started_wrapper}>
-                                    <h4>+375 29 666-66-66</h4>
-                                    <h4>+375 44 666-66-66</h4>
-                                    {/*<Button title="Оставить заявку"/>*/}
-                                    {/*<div className="scroll_down" >*/}
-                                        {/*<div className="scroll_down__button" style={{display: "block"}}/>*/}
-                                    {/*</div>*/}
+                                    <h4>+375 (44) 749-89-82</h4>
+                                    <h4>+375 (29) 775-89-68</h4>
                                 </div>
                             </div>
                         </div>
@@ -101,8 +98,9 @@ class Welcome extends Component {
                             <ol>
                                 <li>Выберите интересующий Вас предмет проката из нашего
                                     <NavLink to="equipment" title="Equipment"> каталога</NavLink>.</li>
-                                <li>Позвоните по номеру <strong>+375 (29) 666-66-66</strong> либо <strong>+375 (33) 666-66-66</strong>
-                                    и уточните наличие заинтересовавшего Вас инструмента. Получите консультацию по заинтересовавшему Вас предмету проката.</li>
+                                <li>Позвоните по номеру <strong>+375 (44) 749-89-82</strong> или <strong>+375 (29) 775-89-68 </strong>
+                                    и уточните наличие заинтересовавшего Вас инструмента. Вы также можете получить консультацию,
+                                    если вы не знаете, какой инструмент вам нужен для тех или иных работ.</li>
                                 <li>Закажите доставку курьером либо заберите инструмент самостоятельно.</li>
                                 <li>Вы также можете оставить заявку на сайте и наши менеджеры свяжутся с вами в кратчайшие сроки,
                                 чтобы определить наиболее подходящий вариант аренды</li>

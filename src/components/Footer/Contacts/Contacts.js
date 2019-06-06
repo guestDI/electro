@@ -25,7 +25,11 @@ const contacts = (props) =>{
                 </li>
                 <li className={classes.Contact_row}>
                     <i className="fa fa-phone"/>
-                    <span>375-29-876-47-67</span>
+                    <span>+375 (44) 749-89-82</span>
+                </li>
+                <li className={classes.Contact_row}>
+                    <i className="fa fa-phone"/>
+                    <span>+375 (29) 775-89-68</span>
                 </li>
                 <li className={classes.Contact_row}>
                     <i className="fa fa-envelope"/>

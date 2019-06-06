@@ -45,6 +45,10 @@
     color: #ffffff;
 }
 
+.Subtext h4{
+    font-weight: 600;
+}
+
 .catalog_button_wrapper{
     padding: 40px 0 20px;
 }

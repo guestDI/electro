@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import Welcome from '../../screens/Welcome/Welcome'
 import {getAllCategories} from '../../api/axios-categories';
+import RequestForm from '../../components/RequestForm/RequestForm';
 
 class WelcomeContainer extends Component {
     state = {
-        categories: []
+        categories: [],
+        name: ""
     };
 
     componentDidMount(){
@@ -29,6 +31,7 @@ class WelcomeContainer extends Component {
     render() {
         return (
             <div>
+                <RequestForm itemName={this.state.name}/>
                 <Welcome categories={this.state.categories} goToCatalog={this.redirectToCatalog}/>
             </div>
         );

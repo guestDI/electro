@@ -26,12 +26,9 @@ const catalog = (props) => {
                     <div className={`row ${classes.row_centered}`}>
                         <div className="col m-0">
                             <div className={`${classes.Subtext} col-md-8 ${classes.col_centered}`}>
-                                <h4>+375 29 666-66-66</h4>
-                                <h4>+375 44 666-66-66</h4>
+                                <h4>+375 (44) 749-89-82</h4>
+                                <h4>+375 (29) 775-89-68</h4>
                             </div>
-                            {/*<div className={classes.catalog_button_wrapper}>*/}
-                            {/*<Button title="Оставить заявку"/>*/}
-                            {/*</div>*/}
                         </div>
                     </div>
                 </div>

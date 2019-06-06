@@ -14,13 +14,17 @@ const navigationItems = props => {
         null :
         <li><Link to="services" spy={true} smooth={true} duration={500} title="About Us ">О нас</Link></li>
 
+    let application = props.currentLocation !== '/' ?
+        <li><div data-toggle="modal" data-target="#exampleModalCenter" title="Request">Оставить заявку</div></li> :
+        null
+
     return(
         <Hoc>
             <li><NavLink to="/" title="Главная">Главная</NavLink></li>
             <li>{equip}</li>
             <li><NavLink to="conditions" title="Prices">Условия и Цены</NavLink></li>
             {about}
-            <li><div data-toggle="modal" data-target="#exampleModalCenter" title="Request">Оставить заявку</div></li>
+            {application}
         </Hoc>
     )
 }
