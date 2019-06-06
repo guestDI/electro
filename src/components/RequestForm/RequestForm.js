@@ -50,6 +50,9 @@ class RequestForm extends Component {
 
     closeModal = () => {
         this.myRef.current.click();
+        this.setState({
+            itemName: "",
+        })
     }
 
     addApplication = e => {
