@@ -56,9 +56,14 @@ class RequestForm extends Component {
     }
 
     addApplication = e => {
+        let application = Object.assign({}, this.state)
+        if(this.state.itemName!=="" && this.state.description===""){
+            application.description = `${this.state.itemName} ${this.state.description}`
+            // console.log(this.state.itemName)
+        }
         e.preventDefault(e);
 
-        saveApplication(this.state)
+        saveApplication(application)
             .then(response => console.log(response))
             .then(this.closeModal)
 
