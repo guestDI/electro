@@ -21,7 +21,7 @@ const contacts = (props) =>{
             <ul className={classes.Contacts_section}>
                 <li className={classes.Contact_row}>
                     <i className="fa fa-map-marker"/>
-                    <span>Main Str. no 45-46, b3, 56832,<br/>Minsk, Belarus</span>
+                    <span>ул. Денисовская 49<br/>Минск, Беларусь</span>
                 </li>
                 <li className={classes.Contact_row}>
                     <i className="fa fa-phone"/>
@@ -33,7 +33,7 @@ const contacts = (props) =>{
                 </li>
                 <li className={classes.Contact_row}>
                     <i className="fa fa-envelope"/>
-                    <span>ignatovich.dm@gmail.com</span>
+                    <span>22lestat88@gmail.com</span>
                 </li>
             </ul>
             {/*<div className="contacts_section__social">*/}

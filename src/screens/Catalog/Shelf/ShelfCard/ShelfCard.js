@@ -9,6 +9,7 @@ const shelfCard = props => {
         }
     }
 
+
     let attachedClass = [classes.Status, "badge"]
     attachedClass = props.itemData.availability ? [...attachedClass, "badge-success"] : [...attachedClass, "badge-secondary"];
     let attachedText = props.itemData.availability ? "В наличии" : "Нет в наличии";
@@ -20,6 +21,7 @@ const shelfCard = props => {
                 <div className={`d-flex flex-column ${classes.Details}`} style={{paddingLeft: '20px'}}>
                     <span className={classes.Title}>{props.itemData.name}</span>
                     <span className={classes.Desc}>{props.itemData.description}</span>
+                    <span className={classes.Title} style={{marginBottom: '10px'}}> {`Цена: ${props.itemData.price} руб/сут`}</span>
                     <div className={attachedClass.join(' ')}>{attachedText}</div>
                 </div>
                 <Button custom_btn={classes.Request_btn} title="Оставить заявку" onClick={itemRequested}/>
