@@ -35,13 +35,13 @@ const conditions = () => (
             <div className="container">
                 <div className={`row ${classes.row_centered}`}>
                     <div className={`col-md-8 ${classes.col_centered}`}>
-                        <h2 >Как взять предмет в прокат</h2>
+                        <h2 >Как взять инструмент в прокат</h2>
                         <hr/>
                     </div>
                 </div>
                 <div className="row">
                     <ol>
-                        <li>Выберите интересующий Вас предмет проката в нашем
+                        <li>Выберите интересующий Вас инструмент проката в нашем
                             <NavLink to="equipment" title="Equipment"> каталоге</NavLink>.</li>
                         <li>Позвоните по номеру <strong>+375 (29) 775-89-68</strong> либо <strong>+375 (44) 749-89-82</strong> и уточните наличие заинтересовавшего Вас предмета. Получите консультацию по заинтересовавшему Вас предмету проката.</li>
                         <li>Закажите доставку курьером либо заберите самостоятельно.</li>

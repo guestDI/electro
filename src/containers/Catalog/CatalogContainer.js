@@ -12,7 +12,8 @@ class CatalogContainer extends Component {
             categories: [],
             items: [],
             id: 1,
-            name: ""
+            name: "",
+            loading: false
         }
     }
 
@@ -42,23 +43,41 @@ class CatalogContainer extends Component {
             temp_id = 1
         }
         // console.log(id)
+        this.setState({loading: true})
+
         getItemsByCategory(temp_id)
             .then(
                 response => {
                     this.setState({
-                        items: response.data.slice()
+                        items: response.data.slice(),
+                        loading: false
+                    })
+                }
+            )
+            .catch(
+                error => {
+                    this.setState({
+                        loading: false
                     })
                 }
             )
     }
 
     getItems = (id) => {
+        this.setState({loading: true})
+
         getItemsByCategory(id)
             .then(
                 response => {
                     this.setState({
-                        items: response.data.slice()
+                        items: response.data.slice(),
+                        loading: false
                     })
+                }
+            )
+            .catch(
+                error => {
+                    this.setState({loading: false})
                 }
             )
     }
@@ -74,7 +93,7 @@ class CatalogContainer extends Component {
             <div>
                 <RequestForm itemName={this.state.name}/>
                 <Catalog categories={this.state.categories} items={this.state.items} getItemsByCategory={this.getItems}
-                         catId={this.state.id} onRequest={this.onRequest}
+                         catId={this.state.id} onRequest={this.onRequest} loading={this.state.loading}
                 />
             </div>
         );

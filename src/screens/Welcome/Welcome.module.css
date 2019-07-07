@@ -147,3 +147,18 @@ hr{
     justify-content: center;
     padding-top: 20px;
 }
+
+@media (max-width: 499px) {
+    .Tile img {
+        margin-top: 20px;
+    }
+    .Get_started_wrapper{
+        padding: 40px 0 20px;
+    }
+    .Welcome_header__text{
+        font-size: 40px !important;
+    }
+    .Subtext{
+        font-size: 1.5rem;
+    }
+}

@@ -22,7 +22,7 @@ const shelf = (props) => {
     } else {
         return (
             <div className="container-fluid" style={{textAlign: 'center', paddingTop: "40px"}}>
-                <h4>
+                <h4 style={{width: '50%'}}>
                     В этой категории пока ничего нет. Вы можете воспользоваться нашей формой заявки, чтобы мы нашли подходящий вариант.
                 </h4>
                 <div style={{paddingTop: '20px'}}>

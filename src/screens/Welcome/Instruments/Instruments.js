@@ -7,9 +7,6 @@ const instruments = props => {
     return (
         <div className={classes.Shelf}>
             {props.list.map((eq, ind) => {
-                // if(ind>=7){
-                //     return null;
-                // } else {
                     return(
                         <InstrumentCard key={`${ind}`} equipment={eq} onCatalogItemClick={props.redirect}/>
                     )

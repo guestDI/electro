@@ -8,7 +8,7 @@
     /*height: 6.8rem;*/
     transition: transform 0.4s ease-in-out 0s, height;
     box-shadow: 0 0.125rem 0.625rem rgba(90,97,105,.12);
-    /*background-color: #fff;*/
+    background-color: rgba(164, 164, 164, 0.08);
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -52,3 +52,9 @@
 .catalog_button_wrapper{
     padding: 40px 0 20px;
 }
+
+@media (max-width: 499px) {
+    .Welcome_header h2{
+        font-size: 40px !important;
+    }
+}

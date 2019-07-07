@@ -3,11 +3,12 @@
     height: 12rem;
     margin: 3px 3px;
     align-items: center;
-    border: 0.1rem solid #51545e;
+    border: 1px solid #8a8f99;
 }
 
 .InstrumentCard_text{
-    font-size: 10px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .InstrumentCard_img{
@@ -71,3 +72,17 @@
     transition: all 0.5s ease-in-out;
 }
 
+@media (max-width: 499px) {
+    .InstrumentListCard {
+        width: 40%;
+        height: 9rem;
+    }
+    .Catalog_btn{
+        font-size: 12px;
+        padding: 0.4em 25px;
+    }
+    .InstrumentCard_text{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

@@ -22,7 +22,7 @@ class InstrumentsListButton extends Component{
             <div className={`${classes.InstrumentListCard} card`}>
                 {/*<img className={`card-img-top ${classes.InstrumentCard_img}`} src={require("../../../../assets/images/categories/dreli-i-miksery.jpg")}/>*/}
                 <div className="card-body">
-                    <h5 className="card-title">Посмотреть весь каталог</h5>
+                    <span className={`${classes.InstrumentCard_text} card-title`}>Посмотреть весь каталог</span>
                     <div style={{paddingTop: '30px'}}>
                         <button type="button" className={classes.Catalog_btn} onClick={this.redirectToCatalog}>Каталог</button>
                     </div>

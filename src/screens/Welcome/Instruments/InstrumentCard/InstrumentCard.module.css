@@ -5,7 +5,7 @@
     max-height: 13rem;
     align-items: center;
     display: flex;
-    border: 0.1rem solid #51545e;
+    border: 1px solid #8a8f99;
 }
 
 .Img_wrapper{
@@ -20,6 +20,11 @@
     justify-content: center;
     align-items: center;
     height: 30%;
+}
+
+.Card_body_text{
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .InstrumentCard_img{
@@ -37,4 +42,19 @@
     cursor: pointer;
     z-index: 90;
     /*border: 2px solid #f0be3d;*/
+}
+
+@media (max-width: 499px) {
+    .InstrumentCard {
+        width: 40%;
+        height: 9rem;
+    }
+    .Card_body_text{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .InstrumentCard_img{
+        max-width: 85px;
+        max-height: 85px;
+    }
 }

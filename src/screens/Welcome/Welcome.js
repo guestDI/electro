@@ -20,7 +20,7 @@ class Welcome extends Component {
                     <div className="container">
                         <div className={`row ${classes.Row_centered}`}>
                             <div className={`${classes.Welcome_header} col-md-10 ${classes.Col_centered}`}>
-                                <h2 className={classes.Text_upper_case}>
+                                <h2 className={`${classes.Welcome_header__text} ${classes.Text_upper_case}`}>
                                     Лучший выбор профессионального инструмента
                                 </h2>
                                 <hr/>
@@ -76,7 +76,7 @@ class Welcome extends Component {
                     <div className="container">
                         <div className={`${classes.Row_centered} row`}>
                             <div className={`col-md-8 ${classes.Col_centered}`}>
-                                <h2 className={classes.Text_upper_case}>Наше оборудование</h2>
+                                <h2 className={classes.Text_upper_case}>Наши инструменты</h2>
                                 <hr/>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ class Welcome extends Component {
                         </div>
                         <div className="row" style={{textAlign: 'left'}}>
                             <ol>
-                                <li>Выберите интересующий Вас предмет проката из нашего
+                                <li>Выберите интересующий Вас инструмент проката из нашего
                                     <NavLink to="equipment" title="Equipment"> каталога</NavLink>.</li>
                                 <li>Позвоните по номеру <strong>+375 (44) 749-89-82</strong> или <strong>+375 (29) 775-89-68 </strong>
                                     и уточните наличие заинтересовавшего Вас инструмента. Вы также можете получить консультацию,
