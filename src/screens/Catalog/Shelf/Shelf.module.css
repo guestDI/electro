@@ -1,12 +1,7 @@
 .shelf {
-    /*margin: auto;*/
-    width: 100%;
-    display: flex;
-    /*flex-flow: row wrap;*/
-    flex: 1;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
+    padding-top: 35px;
+}
+
+@media (max-width: 499px) {
+    .shelf {padding-top: 0 !important;}
 }

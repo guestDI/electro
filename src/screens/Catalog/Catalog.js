@@ -34,8 +34,14 @@ class Catalog extends Component{
             <Shelf data={this.props.items} onItemRequested={this.onItemRequested}/>
         )
 
+        let sideMenu = (
+            <SideMenu items={this.props.categories} getItems={this.props.getItemsByCategory}
+                      categoryId={this.props.catId}/>
+        )
+
         if(this.state.loading){
             shelf = <Spinner/>
+            sideMenu = <Spinner/>
         }
 
         return(
@@ -69,12 +75,12 @@ class Catalog extends Component{
                                 <hr/>
                             </div>
                         </div>
-                        <div className={`${classes.Row} row`}>
-                            <div className="col col-md-3">
-                                <SideMenu items={this.props.categories} getItems={this.props.getItemsByCategory}
-                                          categoryId={this.props.catId}/>
+                        <div className={`${classes.Row} ${classes.mobileRow} row`}>
+                            <div className={`${classes.side_menu} col col-md-3 col-sm-12 col-xs-12`}>
+                                <label className={classes.Label}>Прокат инструмента</label>
+                                {sideMenu}
                             </div>
-                            <div className="col col-md-9 col-sm-1">
+                            <div className={`${classes.shelf} col col-md-9 col-sm-12 col-xs-12`}>
                                 {shelf}
                             </div>
                         </div>

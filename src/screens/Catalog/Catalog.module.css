@@ -57,3 +57,14 @@
     padding-top: 30px;
 }
 
+.Label{
+    font-weight: 500;
+    padding-bottom: 5px;
+    /*text-decoration: underline;*/
+}
+
+@media (max-width: 499px) {
+    .mobileRow {flex-direction: column}
+    .side_menu { order: 1; }
+    .shelf { order: 2;  width: 100%; padding-top: 25px}
+}

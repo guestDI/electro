@@ -7,7 +7,6 @@ const sideMenu = (props) => {
 
     return(
         <Hoc>
-            <label className={classes.Label}>Прокат инструмента</label>
             <div className={`${classes.SideMenu} list-group`}>
                 {props.items.map((i, ind) => {
                     return(

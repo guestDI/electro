@@ -13,6 +13,7 @@ const shelfCard = props => {
     let attachedClass = [classes.Status, "badge"]
     attachedClass = props.itemData.availability ? [...attachedClass, "badge-success"] : [...attachedClass, "badge-secondary"];
     let attachedText = props.itemData.availability ? "В наличии" : "Нет в наличии";
+
     return(
         <div className={`list-group-item ${classes.Item_group} container-fluid`}>
             <div className={classes.Item_wrapper}>

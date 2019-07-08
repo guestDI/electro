@@ -48,6 +48,7 @@ class CatalogContainer extends Component {
         getItemsByCategory(temp_id)
             .then(
                 response => {
+                    // console.log(response)
                     this.setState({
                         items: response.data.slice(),
                         loading: false
@@ -64,7 +65,7 @@ class CatalogContainer extends Component {
     }
 
     getItems = (id) => {
-        this.setState({loading: true})
+        // this.setState({loading: true})
 
         getItemsByCategory(id)
             .then(

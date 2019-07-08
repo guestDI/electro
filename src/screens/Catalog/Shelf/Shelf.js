@@ -1,6 +1,7 @@
 import React  from 'react';
 import ShelfCard from './ShelfCard/ShelfCard';
 import Button from '../../../components/Button/Button';
+import classes from './Shelf.module.css';
 
 const shelf = (props) => {
     function itemRequested(text) {
@@ -11,7 +12,7 @@ const shelf = (props) => {
 
     if(props.data && props.data.length > 0){
         return(
-            <ul className="list-group list-group-flush" style={{paddingTop: '35px'}}>
+            <ul className={`${classes.shelf} list-group list-group-flush`}>
                 {props.data.map((it, ind) =>{
                     return(
                         <ShelfCard itemData={it} key={`${ind}`} itemRequested={itemRequested}/>

@@ -54,8 +54,11 @@
     font-weight: 500;
 }
 
-/*@media screen and (max-width: 531px) {*/
-    /*.Item_group { display: flex; flex-flow: column; }*/
-    /*.Image { order: 1; }*/
-    /*.Details { order: 2;  }*/
-/*}*/
+@media (max-width: 499px) {
+    .Item_wrapper {flex-direction: column}
+    .Item_group { display: flex; flex-flow: column; }
+    .Image { order: 1; width: 50%; max-width: none; padding-bottom: 15px; align-self: baseline}
+    .Details { order: 2;  width: 100%; padding-left: 0px !important; }
+    .Desc {font-size: 12px}
+    .Request_btn { order: 3; margin-top: 15px; align-self: baseline}
+}
