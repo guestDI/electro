@@ -7,13 +7,13 @@ const sideMenu = (props) => {
 
     return(
         <Hoc>
-            <div className={`${classes.SideMenu} list-group`}>
+            <ul className={`${classes.SideMenu} list-group`}>
                 {props.items.map((i, ind) => {
                     return(
                         <SideMenuItem item={i} key={`${ind}`}  category={props.categoryId} getByCategory={props.getItems}/>
                     )
                 })}
-            </div>
+            </ul>
         </Hoc>
     )
 
