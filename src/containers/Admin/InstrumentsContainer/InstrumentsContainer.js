@@ -4,6 +4,7 @@ import Menu from '../../../screens/Admin/Instruments/Menu/Menu';
 import { getItemsByCategory, updateItemStatus } from '../../../api/axios-items';
 import { getAllCategories } from '../../../api/axios-categories';
 import {default as AdminBar} from '../../../screens/Admin/Navigation/Toolbar/Toolbar';
+import { withRouter } from "react-router-dom";
 
 class InstrumentsContainer extends Component {
     constructor(props){

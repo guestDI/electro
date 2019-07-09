@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ApplicationTable from '../../../screens/Admin/Applications/ApplicationTable';
 import { getAllApplications, updateApplicationStatus } from '../../../api/axios-applications';
 import {default as AdminBar} from '../../../screens/Admin/Navigation/Toolbar/Toolbar';
+import { withRouter } from "react-router-dom";
 
 class DashboardContainer extends Component {
     constructor(props){

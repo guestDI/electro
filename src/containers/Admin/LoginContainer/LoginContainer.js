@@ -1,20 +1,28 @@
 import React, { Component } from 'react';
-import Login from '../../../screens/Admin/Login/Login'
+import Login from '../../../screens/Admin/Login/Login';
+import {login} from '../../../api/axios-users';
+import { withRouter } from "react-router";
 
 class LoginContainer extends Component {
-    state = {
-        name: ""
+    constructor(props){
+        super(props)
+        this.state = {
+            isAuthenticated: false,
+        }
     }
 
-    componentDidMount(){
+    onLogin = (text) => {
+        console.log(text)
+        login(text)
+            .then(response => {
+                // console.log(response)
+                 this.setState({isAuthenticated: true})
+                 // this.props.browserHistory.push({
+                 //     pathname: '/dashboard',
+                 //     state: {isAuthenticated: true}
+                 // })
+            })
 
-    }
-
-    onLogin = (e) => {
-        e.preventDefault()
-        this.props.history.push({
-            pathname: 'dashboard'
-        })
     }
 
     render() {
