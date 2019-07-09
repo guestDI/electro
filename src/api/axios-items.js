@@ -11,3 +11,7 @@ export const getAllItems = () => (
 export const getItemsByCategory = (id) => (
     instance.get("/getItemsByCategory/" + id)
 )
+
+export const updateItemStatus = (id, status) => (
+    instance.put("/updateItemStatus/" + id + "/" + status)
+)

@@ -68,3 +68,9 @@
     .side_menu { order: 1; }
     .shelf { order: 2;  width: 100%; padding-top: 25px}
 }
+
+@media (max-width: 499px) {
+    .Welcome_header h2{
+        font-size: 2.5rem !important;
+    }
+}

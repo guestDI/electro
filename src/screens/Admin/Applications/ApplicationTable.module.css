@@ -1,0 +1,8 @@
+.applicationRow{
+    font-size: 11px;
+}
+.active_button{
+    width: 85px;
+    cursor: pointer;
+    font-size: 14px;
+}

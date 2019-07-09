@@ -4,7 +4,7 @@ import SideMenuItem from './SideMenuItem/SideMenuItem';
 import Hoc from '../../../hoc/Hoc';
 
 const sideMenu = (props) => {
-
+    // console.log(props)
     return(
         <Hoc>
             <ul className={`${classes.SideMenu} list-group`}>

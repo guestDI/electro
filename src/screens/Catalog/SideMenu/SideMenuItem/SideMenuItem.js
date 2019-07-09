@@ -10,14 +10,6 @@ class SideMenuItem extends Component {
 
         this.clickSideMenuItem = this.clickSideMenuItem.bind(this);
     }
-
-    // static getDerivedStateFromProps(nextProps, prevState) {
-    //     if (nextProps.category !== prevState.category) {
-    //         return {category: nextProps.category};
-    //     }
-    //     else return null;
-    // }
-
     clickSideMenuItem(e) {
         this.props.getByCategory(this.props.item.id)
         this.setState({currentIndex: e.target.id})

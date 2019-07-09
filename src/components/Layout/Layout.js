@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classes from './Layout.module.css';
-import Toolbar from '../Navigation/Toolbar/Toolbar';
+ import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 import Footer from '../../components/Footer/Footer';
 
@@ -30,18 +30,36 @@ class Layout extends Component{
           });
       });
 
-      return (
-          <div className={classes.Wrapper}>
 
+
+      let main = (
+          <div>
+              <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} location={this.props.location}/>
+              <SideDrawer open={this.state.showSideDrawer} closed={this.sideDrawerClosedHandler}/>
+              <main className={`${classes.Content} p-0`}>
+                  {children}
+                  {/*{this.props.children}*/}
+              </main>
+              <Footer/>
+          </div>
+      )
+
+      if(this.props.location.pathname.match("dashboard")
+          || this.props.location.pathname.match("instruments")
+          || this.props.location.pathname.match("admin")){
+          main = (
               <div>
-                  <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} location={this.props.location}/>
-                  <SideDrawer open={this.state.showSideDrawer} closed={this.sideDrawerClosedHandler}/>
                   <main className={`${classes.Content} p-0`}>
                       {children}
                       {/*{this.props.children}*/}
                   </main>
-                  <Footer/>
               </div>
+          )
+      }
+
+      return (
+          <div className={classes.Wrapper}>
+              {main}
           </div>
       );
   }

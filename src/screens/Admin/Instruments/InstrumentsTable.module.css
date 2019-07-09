@@ -1,0 +1,9 @@
+.applicationRow{
+    font-size: 13px;
+}
+
+.availability_button{
+    width: 85px;
+    cursor: pointer;
+    font-size: 14px;
+}

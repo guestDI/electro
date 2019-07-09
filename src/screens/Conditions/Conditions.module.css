@@ -55,6 +55,12 @@
 
 @media (max-width: 499px) {
     .Welcome_header h2{
-        font-size: 40px !important;
+        font-size: 1.9rem !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .Welcome_header h2{
+        font-size: 1.6rem !important;
     }
 }

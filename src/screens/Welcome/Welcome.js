@@ -94,9 +94,9 @@ class Welcome extends Component {
                                 <hr/>
                             </div>
                         </div>
-                        <div className="row" style={{textAlign: 'left'}}>
+                        <div className="row" style={{textAlign: 'left', paddingRight: '5px'}}>
                             <ol>
-                                <li>Выберите интересующий Вас инструмент проката из нашего
+                                <li>Выберите интересующий Вас инструмент из нашего
                                     <NavLink to="equipment" title="Equipment"> каталога</NavLink>.</li>
                                 <li>Позвоните по номеру <strong>+375 (44) 749-89-82</strong> или <strong>+375 (29) 775-89-68 </strong>
                                     и уточните наличие заинтересовавшего Вас инструмента. Вы также можете получить консультацию,

@@ -56,9 +56,9 @@
 
 @media (max-width: 499px) {
     .Item_wrapper {flex-direction: column}
-    .Item_group { display: flex; flex-flow: column; }
+    .Item_group { display: flex; flex-flow: column; padding-left: 5px; padding-right: 5px}
     .Image { order: 1; width: 50%; max-width: none; padding-bottom: 15px; align-self: baseline}
     .Details { order: 2;  width: 100%; padding-left: 0px !important; }
-    .Desc {font-size: 12px}
+    .Desc {font-size: 12px; padding: 0;}
     .Request_btn { order: 3; margin-top: 15px; align-self: baseline}
 }

@@ -7,3 +7,11 @@ const instance = axios.create({
 export const saveApplication = (application) => (
     instance.put("/addApplication", application)
 )
+
+export const getAllApplications = () => (
+    instance.get("/getAllApplications")
+)
+
+export const updateApplicationStatus = (id, status) => (
+    instance.put("/updateApplicationStatus/" + id + "/" + status)
+)

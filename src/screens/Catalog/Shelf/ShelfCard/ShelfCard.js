@@ -15,7 +15,7 @@ const shelfCard = props => {
     let attachedText = props.itemData.availability ? "В наличии" : "Нет в наличии";
 
     return(
-        <div className={`list-group-item ${classes.Item_group} container-fluid`}>
+        <div className={`${classes.Item_group}`}>
             <div className={classes.Item_wrapper}>
                 <img className={`card-img-top ${classes.Image}`} src={`${props.itemData.itemPhoto}`}
                      alt={props.itemData.name}/>
