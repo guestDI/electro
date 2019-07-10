@@ -1,14 +1,14 @@
 import React, { PureComponent } from 'react';
 
-const accessDenied = () => {
+const notFound = () => {
         return (
-            <div>
+            <div style={{backgroundColor: '#707c90'}}>
                 <div id="denied-message-box">
                     <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <div className="denied-icon"></div>
                     </div>
-                    <div>
-                        <h1>You can't access this page</h1>
+                    <div style={{paddingTop: '100px', paddingBottom: '50px'}}>
+                        <h1>Not Found</h1>
                     </div>
                 </div>
             </div>
@@ -16,4 +16,4 @@ const accessDenied = () => {
 
 }
 
-export default accessDenied;
+export default notFound;

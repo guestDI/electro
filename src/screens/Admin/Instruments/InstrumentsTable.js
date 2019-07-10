@@ -2,6 +2,12 @@ import React from 'react';
 import classes from './InstrumentsTable.module.css';
 
 const instrumentsTable = (props) => {
+    function onItemUpdate(id){
+        if(props.onUpdate){
+            props.onUpdate(id)
+        }
+    }
+
     let instruments = props.instruments.map((i, ind) => {
         let attachedClass = [classes.availability_button, "badge"];
         attachedClass = i.availability ? [...attachedClass, "badge-success"] : [...attachedClass, "badge-secondary"];
@@ -18,6 +24,11 @@ const instrumentsTable = (props) => {
                         {availabilityText}
                     </div>
                 </td>
+                <td>
+                    <button data-toggle="modal" onClick={() => onItemUpdate(i.id)}
+                            data-target="#updateModalCenter">Изменить</button>
+                    <button onClick={() => props.deleteInstrument(i.id)}>Удалить</button>
+                </td>
             </tr>
         )
     })
@@ -32,6 +43,7 @@ const instrumentsTable = (props) => {
                     <th scope="col">Название</th>
                     <th scope="col">Детали</th>
                     <th scope="col">Статус</th>
+                    <th>Действие</th>
                 </tr>
                 </thead>
                 <tbody>

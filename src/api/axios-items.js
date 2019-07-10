@@ -15,3 +15,11 @@ export const getItemsByCategory = (id) => (
 export const updateItemStatus = (id, status) => (
     instance.put("/updateItemStatus/" + id + "/" + status)
 )
+
+export const deleteInstrument = (id) => (
+    instance.put("/deleteItem/" + id)
+)
+
+export const updateInstrument = (obj) => (
+    instance.put("/updateItem", obj)
+)

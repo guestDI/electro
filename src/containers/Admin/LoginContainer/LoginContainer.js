@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Login from '../../../screens/Admin/Login/Login';
-import {login} from '../../../api/axios-users';
-import { withRouter } from "react-router";
+import Auth from '../../../hoc/Auth/Auth';
 
 class LoginContainer extends Component {
     constructor(props){
@@ -11,18 +10,10 @@ class LoginContainer extends Component {
         }
     }
 
-    onLogin = (text) => {
-        console.log(text)
-        login(text)
-            .then(response => {
-                // console.log(response)
-                 this.setState({isAuthenticated: true})
-                 // this.props.browserHistory.push({
-                 //     pathname: '/dashboard',
-                 //     state: {isAuthenticated: true}
-                 // })
-            })
-
+    onLogin = (obj) => {
+        Auth.login(obj, ()=>{
+            this.props.history.push("/dashboard")
+        })
     }
 
     render() {
